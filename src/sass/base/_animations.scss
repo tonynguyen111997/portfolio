@@ -1,0 +1,23 @@
+@mixin keyframes($animationName){
+	@keyframes #{$animationName} {
+		@content
+	}
+}
+
+@mixin animate($name, $duration, $iteration, $direction) {
+	animation-duration: $duration;
+	animation-iteration-count: $iteration;
+	animation-name: $name;
+	animation-direction: $direction;
+}
+
+@include keyframes(shake){
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(0.75deg);}
+	75% {transform: rotate(-0.75deg);}
+	100% {transform: rotate(0deg);}
+}
+
+@mixin shake {
+	@include animate(shake, 0.6s, infinite, normal);
+}
