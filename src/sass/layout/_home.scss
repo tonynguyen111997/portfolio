@@ -1,0 +1,17 @@
+.home{
+	height: 500px;
+	width: 100%;
+	background: $gray-light;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: "";
+		height: 1000px;
+		width: 100%;
+		bottom: -20%;
+		transform: skewY(2deg);
+		background: $gray-light;
+		z-index: -1;
+	} 
+}

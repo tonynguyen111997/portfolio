@@ -1,0 +1,30 @@
+.about{
+	height: 500px;
+	width: 100%;
+	margin-top: 12%;
+	background: $gray;
+	position: relative;
+
+	&:before{
+		content: "";
+		position: absolute;
+		height: 1000px;
+		width: 100%;
+		background: $gray;
+		z-index: -2;
+		bottom: 0;
+		left: 0;
+	}
+
+	&:after{
+		content: "";
+		position: absolute;
+		height: 1000px;
+		width: 100%;
+		background: $gray;
+		z-index: -2;
+		bottom: -20%;
+		left: 0;
+		transform: skewY(-2deg);
+	}
+}

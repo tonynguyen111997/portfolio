@@ -1,0 +1,50 @@
+.projects{
+	margin-top: 12%;
+	width: 100%;
+	position: relative;
+
+	.projects-top{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 500px;
+		background: $gray-light;
+		z-index: -3;
+		top: -45%;
+		left: 0;
+		transform: skewY(2deg);
+	}
+
+	.projects-middle{
+		height: 500px;
+		width: 100%;
+		background: $gray-light;
+	}
+
+	.projects-bottom{
+		display: flex;
+		height: 100px;
+		width: 100%;
+		background: $gray-light;
+		position: relative;
+		z-index: -4;
+
+		.projects-bottom-left{
+			position: absolute;
+			height: 200px;
+			width: 50%;
+			transform: skewY(10deg);
+			background: $gray-light;
+			left: 0;
+		}
+
+		.projects-bottom-right{
+			position: absolute;
+			height: 200px;
+			width: 50%;
+			transform: skewY(-10deg);
+			background: $gray-light;
+			right: 0;
+		}
+	}
+}
