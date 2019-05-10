@@ -1,8 +1,11 @@
 .home{
-	height: 500px;
+	display: flex;
+	height: 600px;
 	width: 100%;
 	background: $gray-light;
 	position: relative;
+	justify-content: center;
+	align-items: center;
 
 	&:before {
 		position: absolute;
@@ -14,4 +17,78 @@
 		background: $gray-light;
 		z-index: -1;
 	} 
+
+	.home-content-container{
+		position: relative;
+		height: 400px;
+		width: 1000px;
+
+		.home-content-left{
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			height: 100%;
+			position: relative;
+			z-index: 1;
+
+			.home-name{
+				width: 175px;
+				font-size: 3rem;
+				margin-left: 50px;
+			}
+
+			.home-quote-container{
+				display: flex;
+				position: absolute;
+				top: 150px; //Change this to move quote 
+				width: 500px;
+				height: 250px;
+				padding: 50px 5px;
+				justify-content: center;
+				align-items: center;
+				background: $white;
+				flex-direction: column;
+
+				.home-quote-marks{
+					position: absolute;
+					font-size: 6rem;
+					left: 25px;
+					top: 55px;
+					color: $red;
+				}
+
+				.home-quote{
+					width: 375px;
+					font-size: 1.5rem;
+				}
+
+				.home-author-container{
+					display: flex;
+					margin-top: 50px;
+					margin-right: 100px;
+					align-self: flex-end;
+					justify-content: space-between;
+					align-items: center;
+					width: 225px;
+					color: red;
+
+					.home-line{
+						width: 100px;
+						height: 2px;
+						background: $red;
+					}
+				}
+			}
+		}
+
+		.home-content-right{
+			position: absolute;
+			top: -10px;
+			right: -25px;
+
+			img{
+				width: 575px;
+			}
+		}
+	}
 }
