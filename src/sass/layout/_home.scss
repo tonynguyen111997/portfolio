@@ -54,7 +54,7 @@
 					font-size: 6rem;
 					left: 25px;
 					top: 55px;
-					color: $red;
+					color: $blue;
 				}
 
 				.home-quote{
@@ -70,12 +70,12 @@
 					justify-content: space-between;
 					align-items: center;
 					width: 225px;
-					color: red;
+					color: $blue;
 
 					.home-line{
 						width: 100px;
 						height: 2px;
-						background: $red;
+						background: $blue;
 					}
 				}
 			}
