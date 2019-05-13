@@ -1,0 +1,15 @@
+.skills-icon-list{
+	display: flex;
+	flex-wrap: wrap;
+
+	ul{
+		list-style: none;
+	}
+	li{
+		margin-top: 25px;
+	}
+
+	.skills-middle-column{
+		margin-top: 50px;
+	}
+}

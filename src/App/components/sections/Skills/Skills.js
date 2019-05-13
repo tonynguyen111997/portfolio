@@ -1,9 +1,14 @@
 import React from 'react';
 
+//components
+import SkillsLeft from './SkillsLeft/SkillsLeft';
+import SkillsRight from './SkillsRight/SkillsRight';
+
 const Skills = () => {
 	return (
 		<div className="skills">
-			Skills
+			<SkillsLeft />
+			<SkillsRight />
 		</div>
 	);
 }
