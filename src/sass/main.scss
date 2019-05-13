@@ -8,6 +8,8 @@
 @import './base/typography';
 @import './base/animations';
 
+
+
 @import './layout/home';
 @import './layout/about';
 @import './layout/skills';
@@ -15,5 +17,12 @@
 @import './layout/contact';
 
 @import './components/menu';
+@import './components/skills/skills-left';
+@import './components/skills/skills-right';
+@import './components/skills/skills-icon-list';
+@import './components/skills/skills-icon';
+@import './components/projects/projects-list';
+@import './components/projects/project-item';
+@import './components/contact/contact-form';
 
 @import './themes/theme';

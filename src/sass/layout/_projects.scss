@@ -1,5 +1,5 @@
 .projects{
-	margin-top: 12%;
+	// margin-top: 12%;
 	width: 100%;
 	position: relative;
 
@@ -10,15 +10,19 @@
 		height: 500px;
 		background: $gray-light;
 		z-index: -3;
-		top: -45%;
+		top: -20%;
 		left: 0;
 		transform: skewY(2deg);
 	}
 
-	.projects-middle{
+	.projects-body{
 		height: 500px;
 		width: 100%;
 		background: $gray-light;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.projects-bottom{
