@@ -1,22 +1,28 @@
 .contact{
 	margin-top: 14%;
 	width: 100%;
+	height: 500px;
 	position: relative;
+	background: $dark-navy;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $gray-light;
 
-	.contact-top{
+	p{
+		color: $blue;
+		margin: 25px 0px;
+	}
+
+	&:before{
 		content: "";
 		position: absolute;
 		width: 100%;
 		height: 1000px;
-		background: $dark-navy;
 		z-index: -5;
 		bottom: 0;
 		left: 0;
-	}
-
-	.contact-middle{
-		height: 500px;
-		width: 100%;
 		background: $dark-navy;
 	}
 }
