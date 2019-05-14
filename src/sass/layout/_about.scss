@@ -7,6 +7,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 4;
 
 	//used to create diagonal lines
 	&:before{
@@ -15,7 +16,7 @@
 		height: 1000px;
 		width: 100%;
 		background: $gray;
-		z-index: -2;
+		// z-index: -2;
 		bottom: 0;
 		left: 0;
 	}
@@ -27,7 +28,7 @@
 		height: 1000px;
 		width: 100%;
 		background: $gray;
-		z-index: -2;
+		// z-index: -2;
 		bottom: -20%;
 		left: 0;
 		transform: skewY(-2deg);
@@ -39,22 +40,25 @@
 	}
 
 	.about-left{
+		position: relative;
 		width: 75%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		z-index: 4;
 
 		.about-img{
 			width: 300px;
 			height: 300px;
-			border: black solid 1px;
 			border-radius: 500px;
 			margin-top: 25px;
 		}
 	}
 
 	.about-right{
+		position: relative;
+		z-index: 4;
 		width: 100%;
 		display: flex;
 		justify-content: center;

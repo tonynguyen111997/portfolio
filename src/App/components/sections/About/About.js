@@ -1,12 +1,15 @@
 import React from 'react';
 
+//images
+import selfImage from './assets/self-image.jpg';
+
 const About = () => {
 	return (
 		<div className="about">
 			<div className="about-content-container">
 				<div className="about-left">
 					<h2>About</h2>
-					<div className="about-img"></div>
+					<img className="about-img" src={selfImage} alt="image of myself" />
 				</div>
 				<div className="about-right">
 					<h3>Who am I?</h3>

@@ -15,22 +15,22 @@ const ProjectsList = () => {
 	return (
 		<ul className="projects-list">
 			<li>
-				<ProjectItem projectImg={takeStand}/>
+				<ProjectItem projectImg={takeStand} projectImgDesc={'take-stand project'}/>
 			</li>
 			<li>
-				<ProjectItem projectImg={stats}/>
+				<ProjectItem projectImg={stats} projectImgDesc={'stats project'}/>
 			</li>
 			<li>
-				<ProjectItem projectImg={tablet}/>
+				<ProjectItem projectImg={tablet} proejctImgDesc={'tablet project'}/>
 			</li>
 			<li>
-				<ProjectItem projectImg={twoPhones}/>
+				<ProjectItem projectImg={twoPhones} projectImgDesc={'twoPhones project'}/>
 			</li>
 			<li>
-				<ProjectItem projectImg={numbers}/>
+				<ProjectItem projectImg={numbers} projectImgDesc={'numbers project'}/>
 			</li>
 			<li>
-				<ProjectItem projectImg={phones}/>
+				<ProjectItem projectImg={phones} projectImgDesc={'phones project'}/>
 			</li>
 		</ul>
 	);

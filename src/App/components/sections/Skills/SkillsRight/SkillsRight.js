@@ -8,6 +8,7 @@ const SkillsRight = () => {
 		<div className="skills-right">
 			<h2>Skills</h2>
 			<SkillsIconList />
+			<button>View More</button>
 		</div>
 	);
 }

@@ -1,4 +1,18 @@
-.skills-icon{
-	width: 125px;
-	height: auto;
+.skills-icon-container{
+	position: relative;
+
+	.skills-icon{
+		width: 125px;
+		height: auto;
+	}
+
+	.skills-icon-overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 125px;
+		width: 125px;
+		background: linear-gradient(145deg, rgba(3, 193, 200, 0.75), rgba(255, 255, 255, 0.5));
+		border-radius: 100%;
+	}
 }

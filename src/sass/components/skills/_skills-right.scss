@@ -6,4 +6,19 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	button{
+		background: $white;
+		border: $blue solid 2px;
+		height: 65px;
+		width: 250px;
+		color: $blue;
+		margin-top: 25px;
+		cursor: pointer;
+
+		&:hover {
+			background: $blue;
+			color: $white;
+		}
+	}
 }
