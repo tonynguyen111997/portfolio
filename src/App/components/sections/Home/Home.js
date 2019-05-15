@@ -7,12 +7,14 @@ import homeImage from './assets/home-image.png';
 import { horizontalToMiddle } from '../../../../util/anims/horizontalToMiddle';
 import { wordFadeIn } from '../../../../util/anims/wordFadeIn';
 
+//components
+import HomeName from './HomeName/HomeName';
+import HomeQuote from './HomeQuote/HomeQuote';
+
 class Home extends Component{
 	constructor(){
 		super();
 		this.slideAnim = null;
-		this.leftElem = null;
-		this.rightElem = null;
 
 		this.firstNameAnim = null;
 		this.firstName = [];
@@ -24,68 +26,65 @@ class Home extends Component{
 		this.quoteAnim = [];
 
 		this.state = {
-			quoteStylePos: 150
+			quoteStylePos: 150,
+			firstName: [],
+			lastName: [],
+			quote: []
 		}
 	}
 
+	//initialize array full of word letters
+	initWord = (word, elem) => {
+		word.unshift(elem);
+	}
+
 	componentDidMount(){
-		this.slideAnim = new horizontalToMiddle(this.leftElem,this.rightElem);
+		//animation for white box and image
+		this.slideAnim = new horizontalToMiddle(document.getElementById('home-quote') , document.getElementById('home-content-right')); 
 
-		this.firstNameAnim = new wordFadeIn(this.firstName, 75);
-		this.lastNameAnim = new wordFadeIn(this.lastName, 75);
-		this.quoteAnim = new wordFadeIn(this.quote, 50);
+		this.firstNameAnim = new wordFadeIn(this.state.firstName, 75); //animation for first name
+		this.lastNameAnim = new wordFadeIn(this.state.lastName, 75); //animation for last name
+		this.quoteAnim = new wordFadeIn(this.state.quote, 50); //animation for quote block
 
-		this.slideAnim.initHorizontalAnim().call(() => {
+		this.slideAnim.initHorizontalAnim().call(() => { //Calls slideAnim animation and then rest of anims
 			this.firstNameAnim.initFadeAnim();
 			this.lastNameAnim.initFadeAnim();
 			this.quoteAnim.initFadeAnim();
+		})
+		.call(() => {
+			document.getElementById('home-quote').style.transition = '300ms all ease-in-out';
 		});
+
 		this.slideAnim.playAnim();
+
+		window.addEventListener('scroll', this.onParallaxScroll);
+	}
+
+	onParallaxScroll = () => {
+		const elem = document.getElementById('home');
+		const rect = elem.getBoundingClientRect();
+		document.getElementById('home-quote').style.top = (150 - ((600 - rect.bottom)/25)) + 'px';
+		document.getElementById('home-image-cover').style.top = (-50 + ((600 - rect.bottom)/25)) + 'px';
+	}
+
+	componentWillUnmount(){
+		window.removeEventListener('scroll', this.onParallaxScroll)
 	}
 
 	render(){
 		return (
-			<div className="home">
+			<div id="home" className="home">
 				<div className="home-content-container">
 					<div className="home-content-left">
-						<div className="home-name">
-							<div className="first-name">
-								<p ref={p => this.firstName.unshift(p)}>T</p>
-								<p ref={p => this.firstName.unshift(p)}>o</p>
-								<p ref={p => this.firstName.unshift(p)}>n</p>
-								<p ref={p => this.firstName.unshift(p)}>y</p>
-							</div>
-							<div className="last-name">
-								<p ref={p => this.lastName.unshift(p)}>N</p>
-								<p ref={p => this.lastName.unshift(p)}>g</p>
-								<p ref={p => this.lastName.unshift(p)}>u</p>
-								<p ref={p => this.lastName.unshift(p)}>y</p>
-								<p ref={p => this.lastName.unshift(p)}>e</p>
-								<p ref={p => this.lastName.unshift(p)}>n</p>
-							</div>
-						</div>
-						<div ref={div => this.leftElem = div} className="home-quote-container" style={{ top: this.state.quoteStylePos + 'px' }}>
-							<div ref={div => this.quote.push(div)} className="home-quote-content">
-								<p className="home-quote-marks">"</p>
-								<div className="home-quote">
-									<p>
-										Lorem ipsum dolor sit amet, 
-										consectetur adipiscing elit, sed do 
-										eiusmod tempor incididunt ut labore
-										et dolore magna aliqua.
-									</p>
-								</div>
-								<div className="home-author-container">
-									<div className="home-line"></div>
-									<p>
-										Person Name
-									</p>
-								</div>
-							</div>
-						</div>
+						<HomeName 
+							initFirstName={(elem) => this.initWord(this.state.firstName, elem)}
+							initLastName={(elem) => this.initWord(this.state.lastName, elem)}
+						/>
+						<HomeQuote initQuote={(elem) => this.initWord(this.state.quote, elem)}/>
 					</div>
-					<div ref={div => this.rightElem = div} className="home-content-right">
-						<img src={homeImage} alt="people studying"/>
+					<div ref={div => this.rightElem = div} id="home-content-right" className="home-content-right">
+						<img id="home-image" src={homeImage} alt="people studying"/>
+						<div id="home-image-cover"></div>
 					</div>
 				</div>
 			</div>
