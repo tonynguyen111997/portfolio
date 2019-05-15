@@ -14,23 +14,17 @@ import HomeQuote from './HomeQuote/HomeQuote';
 class Home extends Component{
 	constructor(){
 		super();
+
+		//declare animation variables
 		this.slideAnim = null;
-
 		this.firstNameAnim = null;
-		this.firstName = [];
-
 		this.lastNameAnim = null;
+		this.quoteAnim = null;
+
+		//array of letters/words
+		this.firstName = [];
 		this.lastName = [];
-
 		this.quote = [];
-		this.quoteAnim = [];
-
-		this.state = {
-			quoteStylePos: 150,
-			firstName: [],
-			lastName: [],
-			quote: []
-		}
 	}
 
 	//initialize array full of word letters
@@ -42,9 +36,9 @@ class Home extends Component{
 		//animation for white box and image
 		this.slideAnim = new horizontalToMiddle(document.getElementById('home-quote') , document.getElementById('home-content-right')); 
 
-		this.firstNameAnim = new wordFadeIn(this.state.firstName, 75); //animation for first name
-		this.lastNameAnim = new wordFadeIn(this.state.lastName, 75); //animation for last name
-		this.quoteAnim = new wordFadeIn(this.state.quote, 50); //animation for quote block
+		this.firstNameAnim = new wordFadeIn(this.firstName, 75); //animation for first name
+		this.lastNameAnim = new wordFadeIn(this.lastName, 75); //animation for last name
+		this.quoteAnim = new wordFadeIn(this.quote, 50); //animation for quote block
 
 		this.slideAnim.initHorizontalAnim().call(() => { //Calls slideAnim animation and then rest of anims
 			this.firstNameAnim.initFadeAnim();
@@ -52,14 +46,17 @@ class Home extends Component{
 			this.quoteAnim.initFadeAnim();
 		})
 		.call(() => {
+			//resets home-quote's transition back to default
 			document.getElementById('home-quote').style.transition = '300ms all ease-in-out';
 		});
 
-		this.slideAnim.playAnim();
+		//plays animation
+		this.slideAnim.playAnim(); 
 
 		window.addEventListener('scroll', this.onParallaxScroll);
 	}
 
+	//on scroll the home-quote & home-image-cover will move
 	onParallaxScroll = () => {
 		const elem = document.getElementById('home');
 		const rect = elem.getBoundingClientRect();
@@ -77,10 +74,12 @@ class Home extends Component{
 				<div className="home-content-container">
 					<div className="home-content-left">
 						<HomeName 
-							initFirstName={(elem) => this.initWord(this.state.firstName, elem)}
-							initLastName={(elem) => this.initWord(this.state.lastName, elem)}
+							initFirstName={(elem) => this.initWord(this.firstName, elem)}
+							initLastName={(elem) => this.initWord(this.lastName, elem)}
 						/>
-						<HomeQuote initQuote={(elem) => this.initWord(this.state.quote, elem)}/>
+						<HomeQuote 
+							initQuote={(elem) => this.initWord(this.quote, elem)}
+						/>
 					</div>
 					<div ref={div => this.rightElem = div} id="home-content-right" className="home-content-right">
 						<img id="home-image" src={homeImage} alt="people studying"/>

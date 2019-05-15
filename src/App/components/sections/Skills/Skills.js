@@ -6,7 +6,7 @@ import SkillsRight from './SkillsRight/SkillsRight';
 
 const Skills = () => {
 	return (
-		<div className="skills">
+		<div id="skills" className="skills">
 			<SkillsLeft />
 			<SkillsRight />
 		</div>

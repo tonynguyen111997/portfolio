@@ -1,0 +1,24 @@
+.home-name{
+	display: flex;
+	flex-wrap: wrap;
+	width: 175px;
+	margin-left: 50px;
+	transition: none;
+	position: relative;
+
+	div{
+		display: flex;
+	}
+
+	.first-name, .last-name{
+		overflow: hidden;
+	}
+
+	p{
+		position: relative;
+		top: -75px;
+		font-size: 3rem;
+		transition: none;
+		opacity: 0;
+	}
+}

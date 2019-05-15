@@ -53,30 +53,10 @@
 			height: 300px;
 			border-radius: 500px;
 			margin-top: 25px;
-		}
-	}
-
-	.about-right{
-		position: relative;
-		z-index: 4;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-
-		h3, p{
-			margin-left: 25px;
-		}
-
-		.about-title{
-			color: $gray-dark;
-			font-size: 1.5rem;
-		}
-
-		p{
-			margin-top: 25px;
-			width: 525px;
-			color: $dark-navy;
+			position: relative;
+			opacity: 0;
+			top: -50px;
+			transition: ease-out all 0.5s;
 		}
 	}
 }
