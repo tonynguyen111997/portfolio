@@ -1,24 +1,31 @@
 .skills-right{
 	display: flex;
 	height: 100%;
-	width: 100%;
-	background: $white;
+	width: 65%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	color: $white;
 
 	button{
 		background: $white;
-		border: $blue solid 2px;
+		border: none;
+		border-radius: 2px;
 		height: 65px;
 		width: 250px;
 		color: $blue;
 		margin-top: 25px;
 		cursor: pointer;
+		box-shadow: $shadow;
+		outline: none;
+		transition: none;
 
-		&:hover {
-			background: $blue;
-			color: $white;
+		&:hover, &:active {
+			background: $gray;
+		}
+
+		&:active {
+			box-shadow: none;
 		}
 	}
 }

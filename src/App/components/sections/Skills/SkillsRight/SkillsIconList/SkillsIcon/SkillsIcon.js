@@ -5,7 +5,6 @@ const SkillsIcon = (props) => {
 	return (
 		<div className="skills-icon-container">
 			<img className="skills-icon" src={imageIcon} alt={imageDesc} />
-			<div className="skills-icon-overlay"></div>
 		</div>
 	);
 }

@@ -65,7 +65,7 @@ class About extends Component{
 							ref={img => this.initWord(this.image, img)}
 							className="about-img" 
 							src={selfImage} 
-							alt="image of myself" />
+							alt="tony nguyen" />
 					</div>
 					<AboutContent 
 						initTitle={(elem) => this.initWord(this.title, elem)}
