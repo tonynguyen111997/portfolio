@@ -1,7 +1,7 @@
 import React from 'react';
 
-//images
-import linkedinIcon from './assets/linkedin.png';
+//components
+import LinkedInButton from './LinkedInButton/LinkedInButton';
 
 const Contact = () => {
 	return (
@@ -10,9 +10,7 @@ const Contact = () => {
 			<a href="mailto:tonynguyen111997@gmail.com?subject=">
 				tonynguyen111997@gmail.com
 			</a>
-			<a href="https://www.linkedin.com/in/tonynguyen111997/">
-				<img src={linkedinIcon} alt="linkedin icon" />
-			</a>
+			<LinkedInButton />
 		</div>
 	);
 }

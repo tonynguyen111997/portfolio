@@ -8,6 +8,8 @@
 	height: 100%;
 	flex-direction: column;
 	justify-content: space-between;
+	box-shadow: 0px 2px 2px 0px gray;
+	z-index: 7;
 
 	.menu-hamburger-container{
 		display: flex;
@@ -16,6 +18,7 @@
 		height: 100px;
 		justify-content: center;
 		align-items: center;
+		box-shadow: $shadow;
 
 		img{
 			width: 50%;
@@ -24,8 +27,23 @@
 		}
 	}
 
+	.menu-white-box{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		height: 150px;
+		width: 100%;
+
+		img{
+			width: 55px;
+			height: auto;
+			border-radius: 100%;
+		}
+	}
+
 	.menu-dark-box{
-		background: $black;
+		background: $dark-navy;
 		width: 100%;
 		height: 200px;
 	}

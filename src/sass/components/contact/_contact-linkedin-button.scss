@@ -1,0 +1,5 @@
+.linkedin-button{
+	&:hover{
+		@include bounce;
+	}
+}

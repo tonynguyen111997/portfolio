@@ -9,11 +9,13 @@ import Contact from './components/sections/Contact/Contact';
 
 //components
 import Menu from './components/Menu/Menu';
+import ReturnButton from './components/ReturnButton/ReturnButton';
 
 function App() {
   return (
     <div className="App">
     	<Menu />
+      <ReturnButton />
       <Home />
       <About />
       <Skills />

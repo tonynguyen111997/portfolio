@@ -8,8 +8,6 @@
 @import './base/typography';
 @import './base/animations';
 
-
-
 @import './layout/home';
 @import './layout/about';
 @import './layout/skills';
@@ -17,6 +15,7 @@
 @import './layout/contact';
 
 @import './components/menu';
+@import './components/return-button';
 @import './components/home/home-name';
 @import './components/home/home-quote';
 @import './components/about/about-header';
@@ -29,5 +28,8 @@
 @import './components/projects/project-header';
 @import './components/projects/projects-list';
 @import './components/projects/project-item';
+@import './components/projects/project-tracker';
+@import './components/projects/project-tracker-item';
+@import './components/contact/contact-linkedin-button';
 
 @import './themes/theme';

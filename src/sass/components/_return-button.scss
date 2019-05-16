@@ -1,0 +1,27 @@
+.return-button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75px;
+	width: 75px;
+	background: $blue;
+	border: none;
+	border-radius: 100%;
+	z-index: 7;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	box-shadow: $shadow;
+	cursor: pointer;
+	outline: none;
+	transition: none;
+
+	img{
+		width: 35px;
+		height: auto;
+	}
+
+	&:active{
+		box-shadow: none;
+	}
+}

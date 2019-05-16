@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 65 65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#pattern);
+      }
+    </style>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 50 50">
+      <image width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALqSURBVGhD7ZhNaxNBGMef3W1MmqaxmBTUGkPFhCJelFoPxZsXL15E8QOIN7+NZ89exA8geu1FEQRPpSA2lbRFSFKTTbIv4zObSZu4z4zJHjazJT/4Z2dn59md/87LPsQAAIaantVVgONjcTJ7ohvRDFMcE4/ciIGDlU6LE/2hp5ZlAfg+XknOrKNHxMTqBJng0EYcJ5haP5od9MNO5eEovd2rg5FbFg31gr/6gdLp4GhYFjs86WLfad7s/TqL0Ufhyte7NdFlmrrdC8XMWoOpxRf3CNuFvCjRZC35ZjcrBj1aWgoOQxb41qtAfXU2DIy0WsFhyNdGW5RobL41a0c6E5pvlx49Zj3HEysizMOnz0MxGoisZCuVDbbf7rKO4zLX85njeazZd9i19Rtk+1lLmTSai1nw7Y440xulkSSh3z4akXNjRDq1fp7YohTm+vKiKI0ji+n5DCoXs+IM4PLmFnz88AnKuQxY+M0avk3eER9/HWx/tViEdqs5uDAhwar/Vyqo9lwybNc7bVNYK7FO3xVX5Pi+z+qdLivduz/2DIXISnE7Gqo9lwxuJJPPsyyqj+VpOGz32JXNicyQleI2NFR7Lhl9/AbtHDVYG79DUfjyu0U+b1TSNYLxohTGkORishhej9MeLJOO+x/4QYZiuQzNg5qoCRPLrsWNRzXBWcBs+/3nb+KMJvbtt+/6cHf7QWCOq3TrNuxikqqaAZw7KzlRksPvEJIKqj2XCr4LHWDutoYL17xZPYszTXahUmXv9o+CnE4Gjx99FiGyUoTTUO25VNiYfG49eTZuYqhUiuWrG+x740/QYRmhuBHFtthrdg/WiwXwJEmogQkqw2toRHp/WT0ntjXy6uULqQkON8Fxgxk0PbGMCE4W3LUme2ftvgvZ1Ph/CEO0GJFJUb1AFbEYmaZr0WxoOCJRmRvRjbkR3Zgb0Y25Ed2YG5kWY8KkMSrS7DdphF+TIlXWmXM8IgllbkQ3zokRgL8crzI3YlsbTwAAAABJRU5ErkJggg=="/>
+    </pattern>
+  </defs>
+  <g id="Group_18" data-name="Group 18" transform="translate(-1819 -387.497)">
+    <circle id="Ellipse_11" data-name="Ellipse 11" cx="32.5" cy="32.5" r="32.5" transform="translate(1819 387.497)"/>
+    <rect id="Image_37" data-name="Image 37" class="cls-1" width="50" height="50" rx="15" transform="translate(1827 395.497)"/>
+  </g>
+</svg>

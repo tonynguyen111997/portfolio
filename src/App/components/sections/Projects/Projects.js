@@ -9,6 +9,7 @@ import { isElementInViewport } from '../../../../util/util';
 //components
 import ProjectsList from './ProjectsList/ProjectsList';
 import ProjectHeader from './ProjectHeader/ProjectHeader';
+import ProjectTracker from './ProjectTracker/ProjectTracker';
 
 class Projects extends Component{
 	constructor(){
@@ -18,11 +19,13 @@ class Projects extends Component{
 		this.headerAnim = null;
 		this.projectRowOneAnim = null;
 		this.projectRowTwoAnim = null;
+		this.projectTrackerAnim = null;
 
 		//array of projects
 		this.header = [];
 		this.projectRowOne = [];
 		this.projectRowTwo = [];
+		this.projectTracker = [];
 	}
 
 	initElem = (elemList, elem) => {
@@ -33,12 +36,14 @@ class Projects extends Component{
 		this.headerAnim = new wordFadeIn(this.header, 75);
 		this.projectRowOneAnim = new wordFadeIn(this.projectRowOne, 225);
 		this.projectRowTwoAnim = new wordFadeIn(this.projectRowTwo, 225);
+		this.projectTrackerAnim = new wordFadeIn(this.projectTracker, 50);
 
 		window.addEventListener('scroll', () => {
 			if(isElementInViewport('projects')){
 				this.headerAnim.initFadeAnim();
 				this.projectRowOneAnim.initFadeAnim();
 				this.projectRowTwoAnim.initFadeAnim();
+				this.projectTrackerAnim.initFadeAnim();
 			}
 		})
 	}
@@ -53,6 +58,7 @@ class Projects extends Component{
 							((elem) => this.initElem(this.projectRowOne, elem)),
 							((elem) => this.initElem(this.projectRowTwo, elem))
 						]}/>
+					<ProjectTracker initProjectTracker={(elem) => this.initElem(this.projectTracker, elem)}/>
 				</div>
 				<div className="projects-bottom">
 					<div className="projects-bottom-left">a</div>
