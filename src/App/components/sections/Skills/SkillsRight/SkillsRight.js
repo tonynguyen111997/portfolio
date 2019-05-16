@@ -2,12 +2,15 @@ import React from 'react';
 
 //components
 import SkillsIconList from './SkillsIconList/SkillsIconList';
+import SkillsHeader from './SkillsHeader/SkillsHeader';
 
-const SkillsRight = () => {
+const SkillsRight = (props) => {
+	const { initIconList, initHeader } = props;
+
 	return (
 		<div className="skills-right">
-			<h2>Skills</h2>
-			<SkillsIconList />
+			<SkillsHeader initHeader={initHeader} />
+			<SkillsIconList initIconList={initIconList} />
 			<button>View More</button>
 		</div>
 	);

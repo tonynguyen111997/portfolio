@@ -1,5 +1,8 @@
 .skills-icon-container{
 	position: relative;
+	top: -100px;
+	opacity: 0;
+	transition: none;
 
 	.skills-icon{
 		width: 125px;

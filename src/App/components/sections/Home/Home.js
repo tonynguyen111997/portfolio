@@ -7,6 +7,9 @@ import homeImage from './assets/home-image.png';
 import { horizontalToMiddle } from '../../../../util/anims/horizontalToMiddle';
 import { wordFadeIn } from '../../../../util/anims/wordFadeIn';
 
+//utils
+import { isElementInViewport } from '../../../../util/util';
+
 //components
 import HomeName from './HomeName/HomeName';
 import HomeQuote from './HomeQuote/HomeQuote';
@@ -58,10 +61,12 @@ class Home extends Component{
 
 	//on scroll the home-quote & home-image-cover will move
 	onParallaxScroll = () => {
-		const elem = document.getElementById('home');
-		const rect = elem.getBoundingClientRect();
-		document.getElementById('home-quote').style.top = (150 - ((600 - rect.bottom)/25)) + 'px';
-		document.getElementById('home-image-cover').style.top = (-50 + ((600 - rect.bottom)/25)) + 'px';
+		if(isElementInViewport){
+			const elem = document.getElementById('home');
+			const rect = elem.getBoundingClientRect();
+			document.getElementById('home-quote').style.top = (150 - ((600 - rect.bottom)/25)) + 'px';
+			document.getElementById('home-image-cover').style.top = (-50 + ((600 - rect.bottom)/25)) + 'px';
+		}
 	}
 
 	componentWillUnmount(){

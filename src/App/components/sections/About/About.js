@@ -42,6 +42,7 @@ class About extends Component{
 		this.titleAnim = new wordFadeIn(this.title, 50);
 		this.jobAnim = new wordFadeIn(this.job, 50);
 		this.descAnim = new wordFadeIn(this.desc, 50);
+		
 		window.addEventListener('scroll', () => {
 			if(isElementInViewport('about')){
 				this.headerAnim.initFadeAnim();
@@ -50,7 +51,7 @@ class About extends Component{
 				this.jobAnim.initFadeAnim();
 				this.descAnim.initFadeAnim();
 			}
-		})
+		});
 	}
 
 	render(){

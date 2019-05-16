@@ -8,8 +8,8 @@ const SkillsLeft = () => {
 	return (
 		<div className="skills-left">
 			<div className="skills-device-container">
-				<img className="skills-phone" src={phone} alt="phone" />
-				<img className="skills-laptop" src={laptop} alt="laptop" />
+				<img id="skills-phone" className="skills-phone" src={phone} alt="phone" />
+				<img id="skills-laptop" className="skills-laptop" src={laptop} alt="laptop" />
 			</div>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
