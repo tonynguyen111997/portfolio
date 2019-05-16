@@ -45,9 +45,9 @@ class Skills extends Component{
 
 	componentDidMount(){
 		this.headerAnim = new wordFadeIn(this.header, 75);
-		this.iconColOneAnim = new wordFadeIn(this.iconColOne, 75);
-		this.iconColTwoAnim = new wordFadeIn(this.iconColTwo, 75);
-		this.iconColThreeAnim = new wordFadeIn(this.iconColThree, 75);
+		this.iconColOneAnim = new wordFadeIn(this.iconColOne, 50);
+		this.iconColTwoAnim = new wordFadeIn(this.iconColTwo, 50);
+		this.iconColThreeAnim = new wordFadeIn(this.iconColThree, 50);
 
 		window.addEventListener('scroll', this.scrollFunc);
 	}

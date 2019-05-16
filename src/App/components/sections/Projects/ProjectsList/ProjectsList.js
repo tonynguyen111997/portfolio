@@ -11,28 +11,40 @@ import phones from '../assets/phones.jpg';
 //components
 import ProjectItem from './ProjectItem/ProjectItem';
 
-const ProjectsList = () => {
+const ProjectsList = (props) => {
+	const { initProject } = props;
+
 	return (
-		<ul className="projects-list">
-			<li>
-				<ProjectItem projectImg={takeStand} projectImgDesc={'take-stand project'}/>
-			</li>
-			<li>
-				<ProjectItem projectImg={stats} projectImgDesc={'stats project'}/>
-			</li>
-			<li>
-				<ProjectItem projectImg={tablet} proejctImgDesc={'tablet project'}/>
-			</li>
-			<li>
-				<ProjectItem projectImg={twoPhones} projectImgDesc={'twoPhones project'}/>
-			</li>
-			<li>
-				<ProjectItem projectImg={numbers} projectImgDesc={'numbers project'}/>
-			</li>
-			<li>
-				<ProjectItem projectImg={phones} projectImgDesc={'phones project'}/>
-			</li>
-		</ul>
+		<div className="projects-list">
+			<div className="projects-row">
+				<ProjectItem 
+					initProject={initProject[0]}
+					projectImg={takeStand} 
+					projectImgDesc={'take-stand project'}/>
+				<ProjectItem 
+					initProject={initProject[0]}
+					projectImg={stats} 
+					projectImgDesc={'stats project'}/>
+				<ProjectItem 
+					initProject={initProject[0]}
+					projectImg={tablet} 
+					proejctImgDesc={'tablet project'}/>
+			</div>
+			<div className="projects-row">
+				<ProjectItem 
+					initProject={initProject[1]}
+					projectImg={twoPhones} 
+					projectImgDesc={'twoPhones project'}/>
+				<ProjectItem 
+					initProject={initProject[1]}
+					projectImg={numbers} 
+					projectImgDesc={'numbers project'}/>
+				<ProjectItem 
+					initProject={initProject[1]}
+					projectImg={phones}
+					projectImgDesc={'phones project'}/>
+			</div>
+		</div>
 	);
 }
 

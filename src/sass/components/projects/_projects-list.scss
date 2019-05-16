@@ -1,10 +1,13 @@
 .projects-list{
 	display: flex;
-	list-style: none;
 	width: 900px;
-	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-	li{
-		// display: inline;
+	.projects-row{
+		display: flex;
+		overflow: hidden;
+		position: relative;
 	}
 }

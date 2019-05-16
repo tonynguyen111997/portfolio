@@ -1,22 +1,66 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+//anims 
+import { wordFadeIn } from '../../../../util/anims/wordFadeIn';
+
+//utils
+import { isElementInViewport } from '../../../../util/util';
 
 //components
 import ProjectsList from './ProjectsList/ProjectsList';
+import ProjectHeader from './ProjectHeader/ProjectHeader';
 
-const Projects = () => {
-	return (
-		<div className="projects">
-			<div className="projects-top"></div> {/* projects-top & projects-bottom is for layout*/}
-			<div className="projects-body">
-				<h2>Projects</h2>
-				<ProjectsList />
+class Projects extends Component{
+	constructor(){
+		super();
+
+		//declare animation variable
+		this.headerAnim = null;
+		this.projectRowOneAnim = null;
+		this.projectRowTwoAnim = null;
+
+		//array of projects
+		this.header = [];
+		this.projectRowOne = [];
+		this.projectRowTwo = [];
+	}
+
+	initElem = (elemList, elem) => {
+		elemList.unshift(elem);
+	}
+
+	componentDidMount(){
+		this.headerAnim = new wordFadeIn(this.header, 75);
+		this.projectRowOneAnim = new wordFadeIn(this.projectRowOne, 225);
+		this.projectRowTwoAnim = new wordFadeIn(this.projectRowTwo, 225);
+
+		window.addEventListener('scroll', () => {
+			if(isElementInViewport('projects')){
+				this.headerAnim.initFadeAnim();
+				this.projectRowOneAnim.initFadeAnim();
+				this.projectRowTwoAnim.initFadeAnim();
+			}
+		})
+	}
+
+	render(){
+		return (
+			<div id="projects" className="projects">
+				<div className="projects-top"></div> {/* projects-top & projects-bottom is for layout*/}
+				<div className="projects-body">
+					<ProjectHeader initHeader={(elem) => this.initElem(this.header, elem)} />
+					<ProjectsList initProject={[
+							((elem) => this.initElem(this.projectRowOne, elem)),
+							((elem) => this.initElem(this.projectRowTwo, elem))
+						]}/>
+				</div>
+				<div className="projects-bottom">
+					<div className="projects-bottom-left">a</div>
+					<div className="projects-bottom-right"></div>
+				</div>
 			</div>
-			<div className="projects-bottom">
-				<div className="projects-bottom-left">a</div>
-				<div className="projects-bottom-right"></div>
-			</div>
-		</div>
-	);
+		);
+	}
 }
 
 export default Projects;

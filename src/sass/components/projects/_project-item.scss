@@ -1,5 +1,8 @@
 .project-item{
+	position: relative;
 	height: 225px;
+	top: -225px;
+	transition: none;
 
 	img{
 		width: 300px;
