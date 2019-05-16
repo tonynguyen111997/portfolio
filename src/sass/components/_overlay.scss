@@ -1,0 +1,20 @@
+.overlay{
+	display: flex;
+	position: fixed;
+	z-index: 8;
+	left: 0;
+	justify-content: center;
+	transition: none;
+
+	.overlay-one{
+		background: $gray-light;
+		align-self: flex-start;
+		transition: none;
+	}
+
+	.overlay-two{
+		align-self: flex-end;
+		background: $gray-light;
+		transition: none;
+	}
+}

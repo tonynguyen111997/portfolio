@@ -10,12 +10,14 @@ import Contact from './components/sections/Contact/Contact';
 //components
 import Menu from './components/Menu/Menu';
 import ReturnButton from './components/ReturnButton/ReturnButton';
+import Overlay from './components/Overlay/Overlay';
 
 function App() {
   return (
     <div className="App">
     	<Menu />
       <ReturnButton />
+      <Overlay />
       <Home />
       <About />
       <Skills />

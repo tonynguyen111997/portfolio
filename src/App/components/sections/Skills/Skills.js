@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 //anims 
 import { wordFadeIn } from '../../../../util/anims/wordFadeIn';
-
+import { overlayAnim } from '../../../../util/anims/overlayAnim';
 
 //utils
 import { isElementInViewport } from '../../../../util/util';
@@ -41,6 +41,11 @@ class Skills extends Component{
 			document.getElementById('skills-laptop').style.top = (100 - ((600 - rect.bottom)/25)) + 'px';
 			document.getElementById('skills-phone').style.top = (150 + ((600 - rect.bottom)/25)) + 'px';
 		}
+	}
+
+	handleViewMore = () => {
+		const overlay = new overlayAnim();
+		return overlay.playHorizontalAnim();
 	}
 
 	componentDidMount(){
@@ -82,6 +87,7 @@ class Skills extends Component{
 			<div id="skills" className="skills">
 				<SkillsLeft />
 				<SkillsRight 
+					onViewMore={this.handleViewMore}
 					initHeader={(elem) => this.initElem(this.header, elem)}
 					initIconList={[
 						(elem) => this.initElem(this.iconColOne, elem), 

@@ -5,13 +5,13 @@ import SkillsIconList from './SkillsIconList/SkillsIconList';
 import SkillsHeader from './SkillsHeader/SkillsHeader';
 
 const SkillsRight = (props) => {
-	const { initIconList, initHeader } = props;
+	const { initIconList, initHeader, onViewMore } = props;
 
 	return (
 		<div className="skills-right">
 			<SkillsHeader initHeader={initHeader} />
 			<SkillsIconList initIconList={initIconList} />
-			<button>View More</button>
+			<button onClick={() => onViewMore()}>View More</button>
 		</div>
 	);
 }
