@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 //anims 
-import { wordFadeIn } from '../../../../util/anims/wordFadeIn';
-import { overlayAnim } from '../../../../util/anims/overlayAnim';
+import { wordFadeIn } from '../../../../../../util/anims/wordFadeIn';
+import { overlayAnim } from '../../../../../../util/anims/overlayAnim';
 
 //utils
-import { isElementInViewport } from '../../../../util/util';
+import { isElementInViewport } from '../../../../../../util/util';
 
 //components
 import SkillsLeft from './SkillsLeft/SkillsLeft';

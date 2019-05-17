@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 //anims 
-import { wordFadeIn } from '../../../../util/anims/wordFadeIn';
+import { wordFadeIn } from '../../../../../../util/anims/wordFadeIn';
 
 //utils
-import { isElementInViewport } from '../../../../util/util';
+import { isElementInViewport } from '../../../../../../util/util';
 
 //components
 import ProjectsList from './ProjectsList/ProjectsList';

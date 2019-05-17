@@ -4,11 +4,11 @@ import React, { Component } from 'react';
 import homeImage from './assets/home-image.png';
 
 //anims
-import { horizontalToMiddle } from '../../../../util/anims/horizontalToMiddle';
-import { wordFadeIn } from '../../../../util/anims/wordFadeIn';
+import { horizontalToMiddle } from '../../../../../../util/anims/horizontalToMiddle';
+import { wordFadeIn } from '../../../../../../util/anims/wordFadeIn';
 
 //utils
-import { isElementInViewport } from '../../../../util/util';
+import { isElementInViewport } from '../../../../../../util/util';
 
 //components
 import HomeName from './HomeName/HomeName';
