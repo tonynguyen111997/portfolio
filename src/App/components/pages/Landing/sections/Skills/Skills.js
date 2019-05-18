@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { TweenMax } from 'gsap';
 
 //anims 
 import { wordFadeIn } from '../../../../../../util/anims/wordFadeIn';
@@ -12,8 +13,8 @@ import SkillsLeft from './SkillsLeft/SkillsLeft';
 import SkillsRight from './SkillsRight/SkillsRight';
 
 class Skills extends Component{
-	constructor(){
-		super();
+	constructor(props){
+		super(props);
 
 		//delcare animation variables
 		this.headerAnim = null;
@@ -44,8 +45,13 @@ class Skills extends Component{
 	}
 
 	handleViewMore = () => {
+		const { changePage } = this.props;
+
 		const overlay = new overlayAnim();
-		return overlay.playHorizontalAnim();
+		TweenMax.killAll();
+		return overlay.initHorizontalAnim(() => {
+			changePage('skillsDetail');
+		}).play();
 	}
 
 	componentDidMount(){

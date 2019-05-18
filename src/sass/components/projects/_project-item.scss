@@ -8,4 +8,54 @@
 		width: 300px;
 		height: auto;
 	}
+
+	.project-item-overlay{
+		display: flex;
+		position: absolute;
+		background: rgba(37, 41, 52, 0.9);
+		width: 300px;
+		height: 225px;
+		top: 0px;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		color: $gray;
+		opacity: 0;
+		overflow: hidden;
+
+		p{
+			position: relative;
+			top: -100px;
+			font-size: 1.25rem;
+			margin-bottom: 75px;
+		}
+
+		button{
+			border: none;
+			background: none;
+			color: $gray;
+			font-size: 1rem;
+			cursor: pointer;
+			position: relative;
+			bottom: -100px;
+			outline: none;
+
+			&:hover{
+				border-bottom: $gray solid 2px;
+			}
+		}
+	}
+
+	&:hover .project-item-overlay{
+		opacity: 1;
+
+		p{
+			top: 0px;
+		}
+
+		button{
+			bottom: 0px;
+		}
+	}
+
 }

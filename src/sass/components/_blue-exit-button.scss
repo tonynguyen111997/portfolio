@@ -1,4 +1,4 @@
-.return-button{
+.blue-exit{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,8 +9,8 @@
 	border-radius: 100%;
 	z-index: 7;
 	position: fixed;
-	bottom: 25px;
-	right: 25px;
+	top: 50px;
+	right: 50px;
 	box-shadow: $shadow;
 	cursor: pointer;
 	outline: none;
@@ -23,9 +23,5 @@
 
 	&:active{
 		box-shadow: none;
-	}
-
-	&:hover{
-		@include bounce;
 	}
 }

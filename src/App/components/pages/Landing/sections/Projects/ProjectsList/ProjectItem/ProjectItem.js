@@ -5,6 +5,12 @@ const ProjectItem = (props) => {
 	return (
 		<div className="project-item" ref={div => initProject(div)}>
 			<img src={projectImg} alt={projectImgDesc} />
+			<div className="project-item-overlay">
+				<p>Project Title</p>
+				<button>
+					Learn More
+				</button>
+			</div>
 		</div>
 	);
 }

@@ -36,6 +36,16 @@ class About extends Component{
 		word.unshift(elem);
 	}
 
+	scrollFunc = () => {
+		if(isElementInViewport('about')){
+			this.headerAnim.initFadeAnim();
+			this.imageAnim.initFadeAnim();
+			this.titleAnim.initFadeAnim();
+			this.jobAnim.initFadeAnim();
+			this.descAnim.initFadeAnim();
+		}
+	}
+
 	componentDidMount(){
 		this.headerAnim = new wordFadeIn(this.header, 75); //animation for header
 		this.imageAnim = new wordFadeIn(this.image, 50);
@@ -43,15 +53,11 @@ class About extends Component{
 		this.jobAnim = new wordFadeIn(this.job, 50);
 		this.descAnim = new wordFadeIn(this.desc, 50);
 		
-		window.addEventListener('scroll', () => {
-			if(isElementInViewport('about')){
-				this.headerAnim.initFadeAnim();
-				this.imageAnim.initFadeAnim();
-				this.titleAnim.initFadeAnim();
-				this.jobAnim.initFadeAnim();
-				this.descAnim.initFadeAnim();
-			}
-		});
+		window.addEventListener('scroll', this.scrollFunc);
+	}
+
+	componentWillUnmount(){
+		window.removeEventListener('scroll', this.scrollFunc);
 	}
 
 	render(){

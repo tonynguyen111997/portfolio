@@ -1,0 +1,11 @@
+.skills-detail{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(to right, $gray, $gray-light 25% 75%, $gray);
+}

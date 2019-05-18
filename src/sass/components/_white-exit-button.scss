@@ -1,16 +1,16 @@
-.return-button{
+.white-exit{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 75px;
 	width: 75px;
-	background: $blue;
+	background: $white;
 	border: none;
 	border-radius: 100%;
 	z-index: 7;
 	position: fixed;
-	bottom: 25px;
-	right: 25px;
+	top: 50px;
+	right: 50px;
 	box-shadow: $shadow;
 	cursor: pointer;
 	outline: none;
@@ -23,9 +23,5 @@
 
 	&:active{
 		box-shadow: none;
-	}
-
-	&:hover{
-		@include bounce;
 	}
 }

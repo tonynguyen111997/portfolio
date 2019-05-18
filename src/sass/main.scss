@@ -17,6 +17,8 @@
 @import './components/menu';
 @import './components/return-button';
 @import './components/overlay';
+@import './components/blue-exit-button';
+@import './components/white-exit-button';
 @import './components/home/home-name';
 @import './components/home/home-quote';
 @import './components/about/about-header';
@@ -26,11 +28,17 @@
 @import './components/skills/skills-header';
 @import './components/skills/skills-icon-list';
 @import './components/skills/skills-icon';
+@import './components/skills/skills-icon-group';
+@import './components/skills/skills-icon-col';
 @import './components/projects/project-header';
 @import './components/projects/projects-list';
 @import './components/projects/project-item';
 @import './components/projects/project-tracker';
 @import './components/projects/project-tracker-item';
 @import './components/contact/contact-linkedin-button';
+
+@import './pages/landing';
+@import './pages/skills-detail';
+@import './pages/skill-info';
 
 @import './themes/theme';

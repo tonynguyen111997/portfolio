@@ -11,14 +11,15 @@ import Contact from './sections/Contact/Contact';
 import Menu from '../../Menu/Menu';
 import ReturnButton from '../../ReturnButton/ReturnButton';
 
-const Landing = () => {
+const Landing = (props) => {
+  const { changePage } = props;
 	return (
 		<div className="landing">
     	<Menu />
       <ReturnButton />
       <Home />
       <About />
-      <Skills />
+      <Skills changePage={changePage}/>
       <Projects />
       <Contact />
 		</div>

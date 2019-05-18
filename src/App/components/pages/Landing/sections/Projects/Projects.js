@@ -32,20 +32,26 @@ class Projects extends Component{
 		elemList.unshift(elem);
 	}
 
+	scrollFunc = () => {
+		if(isElementInViewport('projects')){
+			this.headerAnim.initFadeAnim();
+			this.projectRowOneAnim.initFadeAnim();
+			this.projectRowTwoAnim.initFadeAnim();
+			this.projectTrackerAnim.initFadeAnim();
+		}
+	}
+
 	componentDidMount(){
 		this.headerAnim = new wordFadeIn(this.header, 75);
 		this.projectRowOneAnim = new wordFadeIn(this.projectRowOne, 225);
 		this.projectRowTwoAnim = new wordFadeIn(this.projectRowTwo, 225);
 		this.projectTrackerAnim = new wordFadeIn(this.projectTracker, 50);
 
-		window.addEventListener('scroll', () => {
-			if(isElementInViewport('projects')){
-				this.headerAnim.initFadeAnim();
-				this.projectRowOneAnim.initFadeAnim();
-				this.projectRowTwoAnim.initFadeAnim();
-				this.projectTrackerAnim.initFadeAnim();
-			}
-		})
+		window.addEventListener('scroll', this.scrollFunc);
+	}
+
+	componentWillUnmount(){
+		window.removeEventListener('scroll', this.scrollFunc);
 	}
 
 	render(){
