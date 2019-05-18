@@ -71,6 +71,7 @@ class SkillsDetail extends Component{
 			<div id="skills-detail" className="skills-detail">
 				<BlueExitButton changePage={() => this.changePage('landing')} />
 				<SkillsIconGroup 
+					changePage={() => this.changePage('skillInfo')}
 					initIconGroup={[
 						(elem) => this.initElem(this.iconColOne, elem), 
 						(elem) => this.initElem(this.iconColTwo, elem),
