@@ -1,0 +1,16 @@
+.project-info-skills{
+	background: $dark-navy;
+	height: 15%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img{
+		width: 7%;
+		height: auto;
+		margin: 0px 10px;
+	}
+}

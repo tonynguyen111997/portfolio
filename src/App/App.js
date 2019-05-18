@@ -7,6 +7,7 @@ import Overlay from './components/Overlay/Overlay';
 import Landing from './components/pages/Landing/Landing';
 import SkillsDetail from './components/pages/SkillsDetail/SkillsDetail';
 import SkillInfo from './components/pages/SkillInfo/SkillInfo';
+import ProjectInfo from './components/pages/ProjectInfo/ProjectInfo';
 
 class App extends Component{
   constructor(){
@@ -33,11 +34,14 @@ class App extends Component{
       case 'skillsDetail':
         currentPage = <SkillsDetail changePage={this.changePage}/>
         break;
-       case 'skillInfo':
-         currentPage = <SkillInfo changePage={this.changePage}/>
-         break;
+      case 'skillInfo':
+        currentPage = <SkillInfo changePage={this.changePage}/>
+        break;
+      case 'projectInfo':
+        currentPage = <ProjectInfo changePage={this.changePage}/>
+        break;
       default:
-        currentPage = <Landing />
+        currentPage = <Landing changePage={this.changePage}/>
         break;
     }
 

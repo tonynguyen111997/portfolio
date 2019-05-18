@@ -20,7 +20,7 @@ const Landing = (props) => {
       <Home />
       <About />
       <Skills changePage={changePage}/>
-      <Projects />
+      <Projects changePage={changePage}/>
       <Contact />
 		</div>
 	);

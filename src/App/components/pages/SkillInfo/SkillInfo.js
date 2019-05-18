@@ -10,6 +10,7 @@ import { overlayAnim } from '../../../../util/anims/overlayAnim';
 
 //components
 import WhiteExit from '../../WhiteExitButton/WhiteExitButton';
+import ProjectItem from '../Landing/sections/Projects/ProjectsList/ProjectItem/ProjectItem';
 
 class SkillInfo extends Component{
 	constructor(props){
@@ -35,8 +36,18 @@ class SkillInfo extends Component{
 				<div className="skill-info-right">
 					<h2>JavaScript</h2>
 					<div className="skill-info-projects">
-						<img src={takeStand} alt="take stand" />
-						<img src={tablet} alt="tablet" />
+						<ProjectItem 
+							initProject={() => {}}
+							projectImg={takeStand} 
+							projectImgDesc={'take-stand project'}
+							onProjectClick={() => this.changePage('projectInfo')}
+							/>
+						<ProjectItem 
+							initProject={() => {}}
+							projectImg={tablet} 
+							projectImgDesc={'take-stand project'}
+							onProjectClick={() => this.changePage('projectInfo')}
+							/>
 					</div>
 				</div>
 			</div>

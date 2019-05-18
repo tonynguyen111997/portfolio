@@ -12,7 +12,7 @@ import phones from '../assets/phones.jpg';
 import ProjectItem from './ProjectItem/ProjectItem';
 
 const ProjectsList = (props) => {
-	const { initProject } = props;
+	const { initProject, onProjectClick } = props;
 
 	return (
 		<div className="projects-list">
@@ -20,29 +20,41 @@ const ProjectsList = (props) => {
 				<ProjectItem 
 					initProject={initProject[0]}
 					projectImg={takeStand} 
-					projectImgDesc={'take-stand project'}/>
+					projectImgDesc={'take-stand project'}
+					onProjectClick={onProjectClick}
+					/>
 				<ProjectItem 
 					initProject={initProject[0]}
 					projectImg={stats} 
-					projectImgDesc={'stats project'}/>
+					projectImgDesc={'stats project'}
+					onProjectClick={onProjectClick}
+					/>
 				<ProjectItem 
 					initProject={initProject[0]}
 					projectImg={tablet} 
-					proejctImgDesc={'tablet project'}/>
+					proejctImgDesc={'tablet project'}
+					onProjectClick={onProjectClick}
+					/>
 			</div>
 			<div className="projects-row">
 				<ProjectItem 
 					initProject={initProject[1]}
 					projectImg={twoPhones} 
-					projectImgDesc={'twoPhones project'}/>
+					projectImgDesc={'twoPhones project'}
+					onProjectClick={onProjectClick}
+					/>
 				<ProjectItem 
 					initProject={initProject[1]}
 					projectImg={numbers} 
-					projectImgDesc={'numbers project'}/>
+					projectImgDesc={'numbers project'}
+					onProjectClick={onProjectClick}
+					/>
 				<ProjectItem 
 					initProject={initProject[1]}
 					projectImg={phones}
-					projectImgDesc={'phones project'}/>
+					projectImgDesc={'phones project'}
+					onProjectClick={onProjectClick}
+					/>
 			</div>
 		</div>
 	);

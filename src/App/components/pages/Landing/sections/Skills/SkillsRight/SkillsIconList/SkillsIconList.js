@@ -7,7 +7,7 @@ import jsIcon from '../../assets/js-icon.svg';
 import SkillsIcon from './SkillsIcon/SkillsIcon';
 
 const SkillsIconList = (props) => {
-	const { initIconList } = props;
+	const { initIconList, onSkillClick } = props;
 
 	return (
 		<div className="skills-icon-list">
@@ -17,6 +17,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[0]}
 						imageIcon={jsIcon} 
 						imageDesc={'javascript icon'} 
+						onSkillClick={onSkillClick}
 					/>
 				</li>
 				<li>
@@ -24,6 +25,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[0]}
 						imageIcon={jsIcon} 
 						imageDesc={'javascript icon'} 
+						onSkillClick={onSkillClick}
 					/>
 				</li>
 				<li>
@@ -31,6 +33,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[0]}
 						imageIcon={jsIcon} 
 						imageDesc={'javascript icon'} 
+						onSkillClick={onSkillClick}
 					/>
 				</li>
 			</ul>
@@ -40,6 +43,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[1]}
 						imageIcon={jsIcon} 
 						imageDesc={'javascript icon'} 
+						onSkillClick={onSkillClick}
 					/>
 				</li>
 				<li>
@@ -47,6 +51,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[1]}
 						imageIcon={jsIcon} 
 						imageDesc={'javascript icon'} 
+						onSkillClick={onSkillClick}
 					/>
 				</li>
 				<li>
@@ -54,6 +59,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[1]}
 						imageIcon={jsIcon} 
 						imageDesc={'javascript icon'}
+						onSkillClick={onSkillClick}
 					/>
 				</li>
 			</ul>
@@ -63,6 +69,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[2]}
 						imageIcon={jsIcon} 
 						imageDesc={'javascript icon'} 
+						onSkillClick={onSkillClick}
 					/>
 				</li>
 				<li>
@@ -70,6 +77,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[2]}
 						imageIcon={jsIcon} 
 						imageDesc={'javascript icon'} 
+						onSkillClick={onSkillClick}
 					/>
 				</li>
 				<li>
@@ -77,6 +85,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[2]}
 						imageIcon={jsIcon} 
 						imageDesc={'javascript icon'} 
+						onSkillClick={onSkillClick}
 					/>
 				</li>
 			</ul>

@@ -44,13 +44,13 @@ class Skills extends Component{
 		}
 	}
 
-	handleViewMore = () => {
+	handleViewMore = (page) => {
 		const { changePage } = this.props;
 
 		const overlay = new overlayAnim();
 		TweenMax.killAll();
 		return overlay.initHorizontalAnim(() => {
-			changePage('skillsDetail');
+			changePage(page);
 		}).play();
 	}
 
@@ -93,12 +93,13 @@ class Skills extends Component{
 			<div id="skills" className="skills">
 				<SkillsLeft />
 				<SkillsRight 
-					onViewMore={this.handleViewMore}
+					onViewMore={() => this.handleViewMore('skillsDetail')}
 					initHeader={(elem) => this.initElem(this.header, elem)}
 					initIconList={[
 						(elem) => this.initElem(this.iconColOne, elem), 
 						(elem) => this.initElem(this.iconColTwo, elem),
 						(elem) => this.initElem(this.iconColThree, elem)]}
+					onSkillClick={() => this.handleViewMore('skillInfo')}
 				/>
 			</div>
 		);

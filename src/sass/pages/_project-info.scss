@@ -1,0 +1,39 @@
+#project-info{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.project-info-left,
+	.project-info-right{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		position: relative;
+	}
+
+	.project-info-left{
+		width: 100%;
+	}
+
+	.project-info-right{
+		width: 40%;
+		justify-content: flex-end;
+	}
+
+	.project-white-box{
+		height: 15%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.blue-exit{
+		position: static;
+		margin-right: 5%;
+	}
+}
