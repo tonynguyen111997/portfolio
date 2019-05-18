@@ -13,10 +13,6 @@ import WhiteExit from '../../WhiteExitButton/WhiteExitButton';
 import ProjectItem from '../Landing/sections/Projects/ProjectsList/ProjectItem/ProjectItem';
 
 class SkillInfo extends Component{
-	constructor(props){
-		super(props);
-	}
-
 	changePage = (page) => {
 		const { changePage } = this.props;
 
@@ -31,7 +27,7 @@ class SkillInfo extends Component{
 			<div id="skill-info">
 				<WhiteExit changePage={() => this.changePage('landing')} />
 				<div className="skill-info-left">
-					<img src={jsIcon} alt="skill image" />
+					<img src={jsIcon} alt="skill" />
 				</div>
 				<div className="skill-info-right">
 					<h2>JavaScript</h2>

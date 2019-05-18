@@ -15,7 +15,7 @@ export class menuAnim{
 		.to(this.elemLinkedIn, 0, {opacity: 0})
 		.to(this.elemGitHub, 0, {opacity: 0})
 		.to("#hamburger", 0, { marginRight: 50 })
-		.to([this.elemMenu, this.elemHamburger], 1, { width: '25%', ease: Power4.easeOut, alignItems: 'flex-end'})
+		.to([this.elemMenu, this.elemHamburger], 1, { width: '100%', ease: Power4.easeOut, alignItems: 'flex-end'})
 
 	}
 

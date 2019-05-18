@@ -11,10 +11,6 @@ import ProjectInfoSkills from './ProjectInfoSkills/ProjectInfoSkills';
 import BlueExitButton from '../../BlueExitButton/BlueExitButton';
 
 class ProjectInfo extends Component{
-	constructor(props){
-		super(props);
-	}
-
 	changePage = (page) => {
 		const { changePage } = this.props;
 
