@@ -25,7 +25,7 @@
 	.skills-phone{
 		position: absolute;
 		left: 0;
-		bottom: 0;
+		bottom: 0px;
 		z-index: 1;
 		width: 250px;
 		height: auto;
@@ -39,5 +39,65 @@
 		width: 500px;
 		height: auto;
 		transition: ease-out all 0.5s;
+	}
+	
+	@media only screen and (max-width: $medium-screen){
+		.skills-device-container{
+			width: 600px;
+		}
+		.skills-phone{
+			width: 150px;
+			bottom: 100px;
+			left: 100px;
+		}
+		.skills-laptop{
+			width: 400px;
+			left: 100;
+		}
+
+		p{
+			margin-left: 125px;
+			margin-top: -50px;
+		}
+	}
+
+	@media only screen and (max-width: $small-screen){
+		.skills-device-container{
+			width: 400px;
+		}
+		.skills-phone{
+			width: 150px;
+			bottom: 100px;
+			left: 0px;
+		}
+		.skills-laptop{
+			width: 350px;
+			left: 50px;
+		}
+
+		p{
+			width: 450px;
+			margin-left: 50px;
+			margin-top: -50px;
+		}
+	}
+
+	@media only screen and (max-width: $mobile){
+		height: 600px;
+
+		p{
+			margin-left: 0;
+		}
+
+		.skills-device-container{
+			width: 500px;
+		}
+
+		.skills-phone{
+			left: 0px;
+		}
+		.skills-laptop{
+			left: 100px;
+		}
 	}
 }

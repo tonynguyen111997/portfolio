@@ -16,7 +16,7 @@
 	}
 
 	.projects-body{
-		height: 600px;
+		height: auto;
 		width: 100%;
 		background: $gray-light;
 		display: flex;
@@ -35,22 +35,36 @@
 		position: relative;
 		z-index: 3;
 
-		.projects-bottom-left{
-			position: absolute;
-			height: 200px;
-			width: 50%;
-			transform: skewY(10deg);
-			background: $gray-light;
-			left: 0;
-		}
-
+		.projects-bottom-left,
 		.projects-bottom-right{
 			position: absolute;
 			height: 200px;
 			width: 50%;
-			transform: skewY(-10deg);
 			background: $gray-light;
+		}
+
+		.projects-bottom-left{
+			transform: skewY(10deg);
+			left: 0;
+		}
+
+		.projects-bottom-right{
+			transform: skewY(-10deg);
 			right: 0;
+		}
+	}
+
+	@media only screen and (max-width: $mobile){
+		.projects-top{
+			top: -5%;
+			height: 100px;
+		}
+
+		.projects-bottom{
+			.projects-bottom-left,
+			.projects-bottom-right{
+				height: 150px;
+			}
 		}
 	}
 }

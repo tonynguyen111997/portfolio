@@ -25,4 +25,17 @@
 		height: auto;
 	}
 
+	@media only screen and (max-width: $medium-screen){
+		.skills-icon{
+			width: 75px;
+		}
+
+		.skills-icon-overlay{
+			top: 2px;
+			left: 3px;
+			width: 70px;
+			height: 70px;
+		}
+	}
+
 }

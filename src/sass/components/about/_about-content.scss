@@ -24,4 +24,25 @@
 		width: 525px;
 		color: $dark-navy;
 	}
+
+	@media only screen and (max-width: $medium-screen){
+		.about-title{
+			font-size: 1.25rem;
+		}
+	}
+	@media only screen and (max-width: $mobile){
+		align-items: center;
+
+		h3{
+			margin-top: 25px;
+		}
+
+		.about-title{
+			text-align: center;
+		}
+
+		p{
+			width: 80%;
+		}
+	}
 }

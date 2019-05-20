@@ -30,4 +30,10 @@
 		left: 0;
 		background: $dark-navy;
 	}
+
+	.contact-button-container{
+		display: flex;
+		justify-content: space-between;
+		width: 175px;
+	}
 }

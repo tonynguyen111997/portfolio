@@ -41,4 +41,20 @@
 			color: white;
 		}
 	}
+
+	@media only screen and (max-width: $medium-screen){
+		.nav-item-container{
+			width: 800px;
+		}
+	}
+
+	@media only screen and (max-width: $mobile){
+		.nav-item-container{
+			justify-content: center;
+
+			.nav-link-container{
+				display: none;
+			}
+		}
+	}
 }

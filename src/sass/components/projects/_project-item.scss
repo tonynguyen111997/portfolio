@@ -58,4 +58,30 @@
 		}
 	}
 
+	@media only screen and (max-width: $small-screen){
+		height: 150px;
+
+		img{
+			width: 200px;
+		}
+
+		.project-item-overlay{
+			width: 200px;
+			height: 150px;
+		}
+	}
+
+	@media only screen and (max-width: $mobile){
+		height: 225px;
+
+		img{
+			width: 300px;
+		}
+
+		.project-item-overlay{
+			width: 300px;
+			height: 225px;
+		}
+	}
+
 }

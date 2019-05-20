@@ -16,7 +16,7 @@ class ReturnButton extends Component{
 	render(){
 		return(
 			<button
-				class="return-button" 
+				className="return-button" 
 				onClick={() => this.handleScrollToElement('home')}>
 				<img src={arrow} alt="return arrow" />
 			</button>

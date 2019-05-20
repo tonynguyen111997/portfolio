@@ -1,7 +1,7 @@
 import React from 'react';
 
 //images
-import jsIcon from '../../assets/js-icon.svg';
+import jsIcon from '../../assets/js-icon.png';
 
 //components
 import SkillsIcon from '../../../Landing/sections/Skills/SkillsRight/SkillsIconList/SkillsIcon/SkillsIcon';
