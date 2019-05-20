@@ -17,28 +17,28 @@ class Menu extends Component{
 		}
 	}
 
-	// openMenu = () => {
-	// 	const menuOpen = new menuAnim();
-	// 	menuOpen.initMenuAnim().play();
-	// 	return this.setState({
-	// 		menu: true
-	// 	})
-	// }
+	openMenu = () => {
+		const menuOpen = new menuAnim();
+		menuOpen.initMenuAnim().play();
+		return this.setState({
+			menu: true
+		})
+	}
 
-	// closeMenu = () => {
-	// 	const menuClose = new menuAnim();
-	// 	menuClose.closeMenuAnim().play();
-	// 	return this.setState({
-	// 		menu: false
-	// 	})
-	// }
+	closeMenu = () => {
+		const menuClose = new menuAnim();
+		menuClose.closeMenuAnim().play();
+		return this.setState({
+			menu: false
+		})
+	}
 
-	// menuOption = () => {
-	// 	if(this.state.menu){
-	// 		return this.closeMenu();
-	// 	}
-	// 	return this.openMenu();
-	// }
+	menuOption = () => {
+		if(this.state.menu){
+			return this.closeMenu();
+		}
+		return this.openMenu();
+	}
 
 	render(){
 		return (

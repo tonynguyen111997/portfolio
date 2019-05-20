@@ -8,8 +8,8 @@ const SkillsIcon = (props) => {
 				className="skills-icon" 
 				src={imageIcon} 
 				alt={imageDesc} 
-				onClick={onSkillClick}
 			/>
+			<div className="skills-icon-overlay" onClick={onSkillClick}></div>
 		</div>
 	);
 }

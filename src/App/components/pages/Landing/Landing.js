@@ -8,14 +8,14 @@ import Projects from './sections/Projects/Projects';
 import Contact from './sections/Contact/Contact';
 
 //components
-import Menu from '../../Menu/Menu';
+import Navbar from '../../Navbar/Navbar';
 import ReturnButton from '../../ReturnButton/ReturnButton';
 
 const Landing = (props) => {
   const { changePage } = props;
 	return (
 		<div className="landing">
-    	<Menu />
+      <Navbar />
       <ReturnButton />
       <Home />
       <About />

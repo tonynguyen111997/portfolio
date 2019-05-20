@@ -5,7 +5,7 @@ import LinkedInButton from './LinkedInButton/LinkedInButton';
 
 const Contact = () => {
 	return (
-		<div className="contact">
+		<div id="contact" className="contact">
 			<h2>Contact Me</h2>
 			<a href="mailto:tonynguyen111997@gmail.com?subject=">
 				tonynguyen111997@gmail.com
