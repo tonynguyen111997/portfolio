@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.cf75d577.chunk.css",
+    "main.js": "/portfolio/static/js/main.5d52329b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.5d52329b.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.784d01ab.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.784d01ab.js.map",
+    "static/js/2.e7752337.chunk.js": "/portfolio/static/js/2.e7752337.chunk.js",
+    "static/js/2.e7752337.chunk.js.map": "/portfolio/static/js/2.e7752337.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.71cc4b5013c63879625a1ed9577e17da.js": "/portfolio/precache-manifest.71cc4b5013c63879625a1ed9577e17da.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.cf75d577.chunk.css.map": "/portfolio/static/css/main.cf75d577.chunk.css.map",
+    "static/media/arrow.svg": "/portfolio/static/media/arrow.5953d59c.svg",
+    "static/media/big-js-icon.png": "/portfolio/static/media/big-js-icon.6ef364c0.png",
+    "static/media/main.scss": "/portfolio/static/media/blue-bg.bd80bfae.png",
+    "static/media/blue-exit.svg": "/portfolio/static/media/blue-exit.9a1c45e1.svg",
+    "static/media/home-image.png": "/portfolio/static/media/home-image.8ad02706.png",
+    "static/media/laptop.png": "/portfolio/static/media/laptop.c8ad680c.png",
+    "static/media/numbers.jpg": "/portfolio/static/media/numbers.3df206c6.jpg",
+    "static/media/phone.png": "/portfolio/static/media/phone.9370bc00.png",
+    "static/media/phones.jpg": "/portfolio/static/media/phones.e9f2c5b1.jpg",
+    "static/media/self-image.jpg": "/portfolio/static/media/self-image.bae0584a.jpg",
+    "static/media/stats.jpg": "/portfolio/static/media/stats.5b27ce01.jpg",
+    "static/media/tablet.jpg": "/portfolio/static/media/tablet.7ad23076.jpg",
+    "static/media/take-stand-large.png": "/portfolio/static/media/take-stand-large.f0d6120a.png",
+    "static/media/take-stand.jpg": "/portfolio/static/media/take-stand.b02a0b5b.jpg",
+    "static/media/two-phones.jpg": "/portfolio/static/media/two-phones.cfafab7a.jpg",
+    "static/media/white-exit.svg": "/portfolio/static/media/white-exit.81996afc.svg"
+  }
+}
