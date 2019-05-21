@@ -8,4 +8,8 @@
 	height: 100%;
 	width: 100%;
 	background: linear-gradient(to right, $gray, $gray-light 25% 75%, $gray);
+
+	@media only screen and (max-width: $mobile){
+		height: 650px;
+	}
 }

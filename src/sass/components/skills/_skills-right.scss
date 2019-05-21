@@ -40,4 +40,8 @@
 	@media only screen and (max-width: $mobile){
 		height: 500px;
 	}
+
+	@media only screen and (max-width: $mobile-small){
+		width: 100%;
+	}
 }

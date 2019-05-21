@@ -82,7 +82,7 @@ class Projects extends Component{
 					<ProjectTracker initProjectTracker={(elem) => this.initElem(this.projectTracker, elem)}/>
 				</div>
 				<div className="projects-bottom">
-					<div className="projects-bottom-left">a</div>
+					<div className="projects-bottom-left"></div>
 					<div className="projects-bottom-right"></div>
 				</div>
 			</div>

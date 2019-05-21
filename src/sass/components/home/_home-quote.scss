@@ -89,7 +89,21 @@
 	}
 
 	@media only screen and (max-width: $mobile){
+		position: relative;
 		width: 500px;
-		right: 50px;
+		right: 0px;
+		left: -125px;
+	}
+
+	@media only screen and (max-width: $mobile-small){
+		position: relative;
+		width: 300px;
+		right: 0px;
+		left: -125px;
+
+		.home-quote{
+			width: 225px;
+		}
+
 	}
 }

@@ -78,4 +78,8 @@
 			bottom: -5%;
 		}
 	}
+
+	@media only screen and (max-width: $mobile-small){
+		margin-top: -10px;
+	}
 }

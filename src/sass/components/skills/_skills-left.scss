@@ -100,4 +100,24 @@
 			left: 100px;
 		}
 	}
+
+	@media only screen and (max-width: $mobile-small){
+		.skills-device-container{
+			width: 300px;
+			height: 400px;
+		}
+
+		.skills-phone {
+			width: 100px;
+		}
+
+		.skills-laptop{
+			left: 75px;
+			width: 200px;
+		}
+
+		p{
+			width: 300px;
+		}
+	}
 }

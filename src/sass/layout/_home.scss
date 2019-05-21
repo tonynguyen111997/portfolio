@@ -78,6 +78,10 @@
 	@media only screen and (max-width: $mobile){
 		height: 800px;
 
+		&:before{
+			bottom: -10%;
+		}
+
 		.home-content-container{
 			height: 100%;
 			display: flex;
@@ -85,15 +89,47 @@
 			justify-content: center;
 			align-items: center;
 
+			.home-content-left{
+				width: 100%;
+				align-items: center;
+			}
+
 			.home-content-right{
 				top: 350px;
 				width: 100%;
 				text-align: center;
-				right: -100px;
+				right: -125px;
 				
 				#home-image-cover{
 					width: 90%;
 					right: -100px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: $mobile-small){
+		&:before{
+			bottom: 10%;
+		}
+
+		.home-content-container{
+			.home-content-left{
+				width: 100%;
+				align-items: center;
+			}
+			.home-content-right{
+				right: -125px;
+
+				img{
+					width: 275px;
+				}
+
+				#home-image-cover{
+					height: 260px;
+					width: 80%;
+					left: 0%;
+					border: #F5F5F5 solid 30px;
 				}
 			}
 		}

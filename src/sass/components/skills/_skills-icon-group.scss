@@ -3,10 +3,19 @@
 	height: 450px;
 	width: 900px;
 	justify-content: space-between;
-	border: black solid 1px;
 
 	@media only screen and (max-width: $medium-screen){
 		height: 300px;
 		width: 700px;
+	}
+
+	@media only screen and (max-width: $mobile){
+		width: 500px;
+	}
+
+	@media only screen and (max-width: $mobile-small){
+		height: 450px;
+		width: 250px;
+		flex-wrap: wrap;
 	}
 }

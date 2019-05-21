@@ -44,4 +44,10 @@
 		right: 0;
 		justify-content: center;
 	}
+
+	@media only screen and (max-width: $mobile-small){
+		p{
+			font-size: 2rem;
+		}
+	}
 }
