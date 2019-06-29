@@ -8,15 +8,12 @@ const AboutContent = (props) => {
 		<h3 ref={h3 => initTitle(h3)}>Who am I?</h3>
 		<p className="about-title" ref={p => initJob(p)}>Full Stack Developer</p>
 		<p ref={p => initDesc(p)}>
-			Lorem ipsum dolor sit amet, consectetur, adipiscing elit, sed
-			do eiusmod tempor incididunt ut labore et dolore magna
-			aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-			ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-			cupidatat non proident, sunt in culpa qui officia deserunt
-			mollit anim id est laborum.
-			</p>
+			Self taught web developer that is always looking to grow and improve. 
+			I am a passionate learner that is always eager to gain more experience. Learning 
+			to program has been a passion of mine for many years now, because there is always 
+			something new to learn. I enjoy solving real life problems by developing technologies 
+			that solve them. 
+		</p>
 		</div>
 	);
 }
