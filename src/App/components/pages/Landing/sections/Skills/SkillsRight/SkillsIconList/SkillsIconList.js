@@ -1,7 +1,17 @@
 import React from 'react';
 
 //images
+import htmlIcon from '../../assets/html-logo.png';
+import cssIcon from '../../assets/css-logo.png';
 import jsIcon from '../../assets/js-icon.png';
+// import bootstrapIcon from '../../assets/bootstrap-logo.png';
+import expressIcon from '../../assets/express-logo.png';
+import githubIcon from '../../assets/github-logo.png';
+import gitIcon from '../../assets/git-logo.png';
+import nodeIcon from '../../assets/node-logo.png';
+import reactIcon from '../../assets/react-logo.png';
+import reduxIcon from '../../assets/redux-logo.png';
+import sassIcon from '../../assets/sass-logo.png';
 
 //components
 import SkillsIcon from './SkillsIcon/SkillsIcon';
@@ -23,16 +33,16 @@ const SkillsIconList = (props) => {
 				<li>
 					<SkillsIcon 
 						initIconList={initIconList[0]}
-						imageIcon={jsIcon} 
-						imageDesc={'javascript icon'} 
+						imageIcon={htmlIcon} 
+						imageDesc={'html icon'} 
 						onSkillClick={onSkillClick}
 					/>
 				</li>
 				<li>
 					<SkillsIcon 
 						initIconList={initIconList[0]}
-						imageIcon={jsIcon} 
-						imageDesc={'javascript icon'} 
+						imageIcon={cssIcon} 
+						imageDesc={'css icon'} 
 						onSkillClick={onSkillClick}
 					/>
 				</li>
@@ -41,24 +51,24 @@ const SkillsIconList = (props) => {
 				<li>
 					<SkillsIcon 
 						initIconList={initIconList[1]}
-						imageIcon={jsIcon} 
-						imageDesc={'javascript icon'} 
+						imageIcon={reduxIcon} 
+						imageDesc={'redux icon'} 
 						onSkillClick={onSkillClick}
 					/>
 				</li>
 				<li>
 					<SkillsIcon 
 						initIconList={initIconList[1]}
-						imageIcon={jsIcon} 
-						imageDesc={'javascript icon'} 
+						imageIcon={expressIcon} 
+						imageDesc={'express icon'} 
 						onSkillClick={onSkillClick}
 					/>
 				</li>
 				<li>
 					<SkillsIcon 
 						initIconList={initIconList[1]}
-						imageIcon={jsIcon} 
-						imageDesc={'javascript icon'}
+						imageIcon={githubIcon} 
+						imageDesc={'github icon'}
 						onSkillClick={onSkillClick}
 					/>
 				</li>
@@ -67,24 +77,24 @@ const SkillsIconList = (props) => {
 				<li>
 					<SkillsIcon 
 						initIconList={initIconList[2]}
-						imageIcon={jsIcon} 
-						imageDesc={'javascript icon'} 
+						imageIcon={gitIcon} 
+						imageDesc={'git icon'} 
 						onSkillClick={onSkillClick}
 					/>
 				</li>
 				<li>
 					<SkillsIcon 
 						initIconList={initIconList[2]}
-						imageIcon={jsIcon} 
-						imageDesc={'javascript icon'} 
+						imageIcon={nodeIcon} 
+						imageDesc={'node icon'} 
 						onSkillClick={onSkillClick}
 					/>
 				</li>
 				<li>
 					<SkillsIcon 
 						initIconList={initIconList[2]}
-						imageIcon={jsIcon} 
-						imageDesc={'javascript icon'} 
+						imageIcon={reactIcon} 
+						imageDesc={'react icon'} 
 						onSkillClick={onSkillClick}
 					/>
 				</li>

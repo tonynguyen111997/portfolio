@@ -12,8 +12,8 @@ const SkillsLeft = () => {
 				<img id="skills-laptop" className="skills-laptop" src={laptop} alt="laptop" />
 			</div>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+				Responsive, Dynamic and Optimized Performance are qualities that I 
+				strive to achieve when building applications.
 			</p>
 		</div>
 	);
