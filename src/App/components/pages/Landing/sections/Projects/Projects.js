@@ -79,7 +79,6 @@ class Projects extends Component{
 						]}
 						onProjectClick={this.handleProjectClick}
 					/>
-					<ProjectTracker initProjectTracker={(elem) => this.initElem(this.projectTracker, elem)}/>
 				</div>
 				<div className="projects-bottom">
 					<div className="projects-bottom-left"></div>

@@ -9,16 +9,15 @@ const HomeQuote = (props) => {
 				<p className="home-quote-marks">"</p>
 				<div className="home-quote">
 					<p>
-						Lorem ipsum dolor sit amet, 
-						consectetur adipiscing elit, sed do 
-						eiusmod tempor incididunt ut labore
-						et dolore magna aliqua.
+						But we do know that for habits 
+						to permanently change, people 
+						must believe that change is feasible.
 					</p>
 				</div>
 				<div className="home-author-container">
 					<div className="home-line"></div>
 					<p>
-						Person Name
+						Charles Duhigg
 					</p>
 				</div>
 			</div>
