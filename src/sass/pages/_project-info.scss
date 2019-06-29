@@ -1,38 +1,20 @@
 #project-info{
 	margin-top: -65px;
-	height: 700px;
-	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: absolute;
+	height: inherit;
+	min-height: 100%;
+	width: 100%;
+	background: rgba(37, 41, 52, 0.9);
 
-	.project-info-left,
-	.project-info-right{
+	.project-info-container{
 		display: flex;
-		flex-direction: column;
-		height: 100%;
-		position: relative;
-	}
-
-	.project-info-left{
-		width: 100%;
-	}
-
-	.project-info-right{
-		width: 40%;
-		justify-content: flex-start;
-		height: 100%;
-	}
-
-	.project-white-box{
-		height: 15%;
-		display: flex;
-		justify-content: flex-end;
 		align-items: center;
-	}
-
-	.blue-exit{
-		position: static;
-		margin-right: 5%;
+		flex-direction: column;
+		max-width: 1386px;
+		width: 100%;
+		position: relative;
 	}
 }

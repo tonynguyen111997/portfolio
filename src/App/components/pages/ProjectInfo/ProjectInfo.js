@@ -24,17 +24,14 @@ class ProjectInfo extends Component{
 	render(){
 		return (
 			<div id="project-info">
-				<div className="project-info-left">
-					<ProjectInfoImage />
-					<ProjectInfoSkills />
-				</div>
-				<div className="project-info-right">
+				<div className="project-info-container">
 					<div className="project-white-box">
 						<BlueExitButton changePage={() => this.changePage('landing')} />
 					</div>
+					<ProjectInfoImage />
+					<ProjectInfoSkills changePage={() => this.changePage('skillInfo')} />
 					<ProjectInfoDesc />
 				</div>
-
 			</div>
 		);
 	}

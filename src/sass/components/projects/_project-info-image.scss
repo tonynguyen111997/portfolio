@@ -1,12 +1,11 @@
 .project-info-image{
-	// height: 100%;
 	width: 100%;
+	height: auto;
 	position: relative;
 
 	img{
 		display: block;
 		width: 100%;
-		height: auto;
 	}
 
 	.project-info-overlay{
@@ -30,7 +29,7 @@
 			opacity: 0.5;
 			margin: 0px 10px;
 			cursor: pointer;
-			height: 85%;
+			height: 100%;
 			display: flex;
 			justify-content: center;
 			align-items: center;

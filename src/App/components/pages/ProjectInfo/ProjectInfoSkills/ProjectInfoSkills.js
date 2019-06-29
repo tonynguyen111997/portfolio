@@ -4,11 +4,12 @@ import React from 'react';
 import jsIcon from '../assets/js-icon.png';
 import htmlIcon from '../assets/html-icon.png';
 
-const ProjectInfoSkills = () => {
+const ProjectInfoSkills = (props) => {
+	const { changePage } = props;
 	return (
 		<div className="project-info-skills">
-			<img src={jsIcon} alt="javascript" />
-			<img src={htmlIcon} alt="html" />			
+			<img src={jsIcon} alt="javascript" onClick={changePage}/>
+			<img src={htmlIcon} alt="html" onClick={changePage}/>			
 		</div>
 	);
 }
