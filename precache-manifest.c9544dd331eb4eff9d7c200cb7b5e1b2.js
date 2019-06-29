@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "96a5c6a2d892445c59287b823aee8eba",
+    "revision": "934746af75cd4d8d2cb64438ebc79c3d",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "5dd68357b74e4299d0f9",
-    "url": "/portfolio/static/css/main.cf75d577.chunk.css"
+    "revision": "430652f972aacdbbc64a",
+    "url": "/portfolio/static/css/main.57db677c.chunk.css"
   },
   {
-    "revision": "574f4b7b6ef6af4307a8",
-    "url": "/portfolio/static/js/2.e7752337.chunk.js"
+    "revision": "b37374740d9013bb4568",
+    "url": "/portfolio/static/js/2.7c49b2f3.chunk.js"
   },
   {
-    "revision": "5dd68357b74e4299d0f9",
-    "url": "/portfolio/static/js/main.5d52329b.chunk.js"
+    "revision": "430652f972aacdbbc64a",
+    "url": "/portfolio/static/js/main.738500bd.chunk.js"
   },
   {
     "revision": "0fad4c0f10d57b530fe4",
@@ -36,12 +36,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/blue-exit.9a1c45e1.svg"
   },
   {
-    "revision": "8ad02706e3e1991efd045d79927475d9",
-    "url": "/portfolio/static/media/home-image.8ad02706.png"
+    "revision": "5b56b244622be30536f1005252c5fd32",
+    "url": "/portfolio/static/media/css-logo.5b56b244.png"
+  },
+  {
+    "revision": "71d4b64ed69063c8bcf715ec2d850115",
+    "url": "/portfolio/static/media/express-logo.71d4b64e.png"
+  },
+  {
+    "revision": "cdf1d311f23e7446b0b2c8892eff544f",
+    "url": "/portfolio/static/media/git-logo.cdf1d311.png"
+  },
+  {
+    "revision": "e4d9ecc148d6508ca19ac5656ef084e7",
+    "url": "/portfolio/static/media/html-logo.e4d9ecc1.png"
+  },
+  {
+    "revision": "6e2ffc1daa45054b299bbac1e1b2cc0d",
+    "url": "/portfolio/static/media/laptop-picture.6e2ffc1d.jpg"
   },
   {
     "revision": "c8ad680ca87cb02c3a16a99e0c6e3492",
     "url": "/portfolio/static/media/laptop.c8ad680c.png"
+  },
+  {
+    "revision": "6db318288cfc63b4010a8d20aade7d91",
+    "url": "/portfolio/static/media/node-logo.6db31828.png"
   },
   {
     "revision": "3df206c6f078e258a1b017caca677e60",
@@ -54,6 +74,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e9f2c5b13dd460304bdce5d8daa8eed6",
     "url": "/portfolio/static/media/phones.e9f2c5b1.jpg"
+  },
+  {
+    "revision": "2656af6d66c1f8968c0f99189c2a736f",
+    "url": "/portfolio/static/media/react-logo.2656af6d.png"
+  },
+  {
+    "revision": "0408d7adb2402719346c7933672b9e8f",
+    "url": "/portfolio/static/media/redux-logo.0408d7ad.png"
+  },
+  {
+    "revision": "97d6531e09666f1cc7d75c3d7c5d567d",
+    "url": "/portfolio/static/media/sass-logo.97d6531e.png"
   },
   {
     "revision": "bae0584a37510368e6959bef0d9e6ad3",
