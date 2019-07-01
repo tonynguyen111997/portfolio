@@ -7,25 +7,25 @@ import jsIcon from '../../assets/js-icon.png';
 import SkillsIcon from '../../../Landing/sections/Skills/SkillsRight/SkillsIconList/SkillsIcon/SkillsIcon';
 
 const SkillsIconCol = (props) => {
-	const { initIconList, changePage } = props;
+	const { initIconList, changePage, imageList } = props;
 	return (
 		<div className="skills-icon-col">
 			<SkillsIcon 
 				initIconList={initIconList}
-				imageIcon={jsIcon}
-				imageDesc={'js-icon'}
+				imageIcon={imageList[0]}
+				imageDesc={'skill icon'}
 				onSkillClick={changePage}
 			/>
 			<SkillsIcon 
 				initIconList={initIconList}
-				imageIcon={jsIcon}
-				imageDesc={'js-icon'}
+				imageIcon={imageList[1]}
+				imageDesc={'skill icon'}
 				onSkillClick={changePage}
 			/>
 			<SkillsIcon 
 				initIconList={initIconList}
-				imageIcon={jsIcon}
-				imageDesc={'js-icon'}
+				imageIcon={imageList[2]}
+				imageDesc={'skill icon'}
 				onSkillClick={changePage}
 			/>
 		</div>

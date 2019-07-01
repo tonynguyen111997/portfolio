@@ -3,8 +3,7 @@ import React from 'react';
 //images
 import htmlIcon from '../../assets/html-logo.png';
 import cssIcon from '../../assets/css-logo.png';
-import jsIcon from '../../assets/js-icon.png';
-// import bootstrapIcon from '../../assets/bootstrap-logo.png';
+import jsIcon from '../../assets/js-logo.png';
 import expressIcon from '../../assets/express-logo.png';
 import githubIcon from '../../assets/github-logo.png';
 import gitIcon from '../../assets/git-logo.png';
