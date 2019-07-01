@@ -16,7 +16,7 @@ const ProjectInfoDesc = () => {
 				incididunt ut labore et dolore
 				magna aliqua. Lorem ipsum dolor sit amet,
 				consectetur adipiscing elit,
-				sed do eiusmod tempor
+				sed do eiusmod tempaaaaor
 				incididunt ut labore et dolore
 				magna aliqua.
 			</p>
