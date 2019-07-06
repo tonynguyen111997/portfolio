@@ -26,7 +26,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[0]}
 						imageIcon={jsIcon} 
 						imageDesc={'javascript icon btn'} 
-						onSkillClick={onSkillClick}
+						skillHref={'https://g.co/kgs/fLNmrw'}
 					/>
 				</li>
 				<li>
@@ -34,7 +34,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[0]}
 						imageIcon={htmlIcon} 
 						imageDesc={'html icon btn'} 
-						onSkillClick={onSkillClick}
+						skillHref={'https://g.co/kgs/Y3EnJw'}
 					/>
 				</li>
 				<li>
@@ -42,7 +42,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[0]}
 						imageIcon={cssIcon} 
 						imageDesc={'css icon btn'} 
-						onSkillClick={onSkillClick}
+						skillHref={'https://g.co/kgs/kb8HBg'}
 					/>
 				</li>
 			</ul>
@@ -52,7 +52,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[1]}
 						imageIcon={reduxIcon} 
 						imageDesc={'redux icon btn'} 
-						onSkillClick={onSkillClick}
+						skillHref={'https://g.co/kgs/xw3k1c'}
 					/>
 				</li>
 				<li>
@@ -60,7 +60,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[1]}
 						imageIcon={expressIcon} 
 						imageDesc={'express icon btn'} 
-						onSkillClick={onSkillClick}
+						skillHref={'https://g.co/kgs/5KJFmd'}
 					/>
 				</li>
 				<li>
@@ -68,7 +68,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[1]}
 						imageIcon={githubIcon} 
 						imageDesc={'github icon btn'}
-						onSkillClick={onSkillClick}
+						skillHref={'https://g.co/kgs/wgRJh7'}
 					/>
 				</li>
 			</ul>
@@ -78,7 +78,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[2]}
 						imageIcon={gitIcon} 
 						imageDesc={'git icon btn'} 
-						onSkillClick={onSkillClick}
+						skillHref={'https://g.co/kgs/HCEBRb'}
 					/>
 				</li>
 				<li>
@@ -86,7 +86,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[2]}
 						imageIcon={nodeIcon} 
 						imageDesc={'node icon btn'} 
-						onSkillClick={onSkillClick}
+						skillHref={'https://g.co/kgs/iPcFNA'}
 					/>
 				</li>
 				<li>
@@ -94,7 +94,7 @@ const SkillsIconList = (props) => {
 						initIconList={initIconList[2]}
 						imageIcon={reactIcon} 
 						imageDesc={'react icon btn'} 
-						onSkillClick={onSkillClick}
+						skillHref={'https://g.co/kgs/CWEhJX'}
 					/>
 				</li>
 			</ul>

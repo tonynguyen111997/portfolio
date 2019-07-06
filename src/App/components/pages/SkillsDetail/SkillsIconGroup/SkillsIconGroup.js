@@ -22,39 +22,39 @@ import adobexdIcon from '../../Landing/sections/Skills/assets/adobexd-logo.png';
 import jestIcon from '../../Landing/sections/Skills/assets/jest-logo.png';
 
 const SkillsIconGroup = (props) => {
-	const { initIconGroup, changePage } = props;
+	const { initIconGroup } = props;
 
 	return (
 		<div className="skills-icon-group">
 			<SkillsIconCol 
 				imageList = {[htmlIcon, cssIcon, jsIcon]}
+				hrefList ={["https://g.co/kgs/Px4Xts", "https://g.co/kgs/HcYpLi", "https://g.co/kgs/FPQFUy"]}
 				initIconList={initIconGroup[0]}
-				changePage={changePage}
 			/>
 			<SkillsIconCol 
 				imageList = {[expressIcon, githubIcon, gitIcon]}
 				initIconList={initIconGroup[1]}
-				changePage={changePage}
+				hrefList = {["https://g.co/kgs/xnVFSA", "https://g.co/kgs/T2vfTx", "https://g.co/kgs/zEvmRY"]}
 			/>
 			<SkillsIconCol 
 				imageList = {[nodeIcon, reactIcon, reduxIcon]}
 				initIconList={initIconGroup[2]}
-				changePage={changePage}
+				hrefList = {["https://g.co/kgs/FLpsxE", "https://g.co/kgs/7qYniw", "https://g.co/kgs/Q3qAsz"]}
 			/>
 			<SkillsIconCol 
 				imageList = {[sassIcon, bootstrapIcon, sqlIcon]}
 				initIconList={initIconGroup[3]}
-				changePage={changePage}
+				hrefList = {["https://g.co/kgs/QrUUpK", "https://g.co/kgs/g11a24", "https://g.co/kgs/HXi4ia"]}
 			/>
 			<SkillsIconCol 
 				imageList = {[postgresIcon, mysqlIcon, nextIcon]}
 				initIconList={initIconGroup[4]}
-				changePage={changePage}
+				hrefList = {["https://g.co/kgs/g77zMU", "https://g.co/kgs/fBEjVt", "https://nextjs.org/"]}
 			/>
 			<SkillsIconCol 
 				imageList = {[jqueryIcon, adobexdIcon, jestIcon]}
 				initIconList={initIconGroup[5]}
-				changePage={changePage}
+				hrefList = {["https://g.co/kgs/Cm3rAc", "https://g.co/kgs/iD26mV", "https://jestjs.io/"]}
 			/>
 		</div>
 	);
