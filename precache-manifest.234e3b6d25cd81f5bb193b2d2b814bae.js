@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "934746af75cd4d8d2cb64438ebc79c3d",
+    "revision": "9911dc73f1108af5c6ef08d6d7780c2c",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "430652f972aacdbbc64a",
-    "url": "/portfolio/static/css/main.57db677c.chunk.css"
+    "revision": "3ecd14cc5d3181925f73",
+    "url": "/portfolio/static/css/main.bf669891.chunk.css"
   },
   {
-    "revision": "b37374740d9013bb4568",
-    "url": "/portfolio/static/js/2.7c49b2f3.chunk.js"
+    "revision": "df213698d7c57d9618c3",
+    "url": "/portfolio/static/js/2.a474ce7e.chunk.js"
   },
   {
-    "revision": "430652f972aacdbbc64a",
-    "url": "/portfolio/static/js/main.738500bd.chunk.js"
+    "revision": "3ecd14cc5d3181925f73",
+    "url": "/portfolio/static/js/main.c614e971.chunk.js"
   },
   {
     "revision": "0fad4c0f10d57b530fe4",
@@ -36,6 +36,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/blue-exit.9a1c45e1.svg"
   },
   {
+    "revision": "1d3f5c5e8c62e8e4039f025ef6064707",
+    "url": "/portfolio/static/media/bootstrap-logo.1d3f5c5e.png"
+  },
+  {
     "revision": "5b56b244622be30536f1005252c5fd32",
     "url": "/portfolio/static/media/css-logo.5b56b244.png"
   },
@@ -48,8 +52,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/git-logo.cdf1d311.png"
   },
   {
+    "revision": "e16bf602ce70bbdb85b7e61250013626",
+    "url": "/portfolio/static/media/github-logo.e16bf602.png"
+  },
+  {
     "revision": "e4d9ecc148d6508ca19ac5656ef084e7",
     "url": "/portfolio/static/media/html-logo.e4d9ecc1.png"
+  },
+  {
+    "revision": "166442ff7a72e146e1c725079790aaaa",
+    "url": "/portfolio/static/media/iesd.166442ff.jpg"
+  },
+  {
+    "revision": "f960f60429ad89d76aac8e91c8e9879d",
+    "url": "/portfolio/static/media/jQuery-logo.f960f604.png"
+  },
+  {
+    "revision": "8dfffb612fa1360efa2c6b2702fda382",
+    "url": "/portfolio/static/media/jest-logo.8dfffb61.png"
   },
   {
     "revision": "6e2ffc1daa45054b299bbac1e1b2cc0d",
@@ -60,20 +80,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/laptop.c8ad680c.png"
   },
   {
-    "revision": "6db318288cfc63b4010a8d20aade7d91",
-    "url": "/portfolio/static/media/node-logo.6db31828.png"
+    "revision": "43b5888f9f2be2dd53751cefc058d924",
+    "url": "/portfolio/static/media/ledkyb.43b5888f.jpg"
   },
   {
-    "revision": "3df206c6f078e258a1b017caca677e60",
-    "url": "/portfolio/static/media/numbers.3df206c6.jpg"
+    "revision": "6884bc3b5b8e465651696e7e6416f527",
+    "url": "/portfolio/static/media/mysql-logo.6884bc3b.png"
+  },
+  {
+    "revision": "828b044989c4e993b60e2db1ae10ef64",
+    "url": "/portfolio/static/media/next-logo.828b0449.png"
+  },
+  {
+    "revision": "6db318288cfc63b4010a8d20aade7d91",
+    "url": "/portfolio/static/media/node-logo.6db31828.png"
   },
   {
     "revision": "9370bc002b683dc95b126fd15e1bfc51",
     "url": "/portfolio/static/media/phone.9370bc00.png"
   },
   {
-    "revision": "e9f2c5b13dd460304bdce5d8daa8eed6",
-    "url": "/portfolio/static/media/phones.e9f2c5b1.jpg"
+    "revision": "e743a145304c256f4708614ea5fe15c7",
+    "url": "/portfolio/static/media/portfolio.e743a145.jpg"
+  },
+  {
+    "revision": "981ae4359b55ea660be638b415466d12",
+    "url": "/portfolio/static/media/postgres-logo.981ae435.png"
   },
   {
     "revision": "2656af6d66c1f8968c0f99189c2a736f",
@@ -92,8 +124,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/self-image.bae0584a.jpg"
   },
   {
-    "revision": "5b27ce01b6251448475c169921850a8e",
-    "url": "/portfolio/static/media/stats.5b27ce01.jpg"
+    "revision": "04a226a62196d12541d00d49a347cd0f",
+    "url": "/portfolio/static/media/simon.04a226a6.jpg"
+  },
+  {
+    "revision": "74746e7591ae1f3a282c02a523649006",
+    "url": "/portfolio/static/media/smilur.74746e75.jpg"
+  },
+  {
+    "revision": "d6d9ad01399178b48725a09c4c483503",
+    "url": "/portfolio/static/media/sql-logo.d6d9ad01.png"
   },
   {
     "revision": "7ad23076290c2f8f513245b85a9f5ed5",
@@ -106,10 +146,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b02a0b5be1787c3eb23c21323c182bf0",
     "url": "/portfolio/static/media/take-stand.b02a0b5b.jpg"
-  },
-  {
-    "revision": "cfafab7ab78a8f60b8de81867b31e5b9",
-    "url": "/portfolio/static/media/two-phones.cfafab7a.jpg"
   },
   {
     "revision": "81996afc87580aa805b867f0cf0a84be",
