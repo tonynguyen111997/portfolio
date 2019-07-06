@@ -33,6 +33,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "latest"
+    "gh-pages": "^2.0.1"
   }
 }
