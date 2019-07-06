@@ -4,12 +4,18 @@ import React from 'react';
 import jsIcon from '../assets/js-icon.png';
 import htmlIcon from '../assets/html-icon.png';
 
+//components
+import SkillIcon from './ProjectInfoSkillIcon/ProjectInfoSkillIcon';
+
 const ProjectInfoSkills = (props) => {
-	const { changePage } = props;
+	const { skillList } = props;
 	return (
 		<div className="project-info-skills">
-			<img src={jsIcon} alt="javascript" onClick={changePage}/>
-			<img src={htmlIcon} alt="html" onClick={changePage}/>			
+			<SkillIcon 
+				skillHref={skillList.href}
+				imageSrc={jsIcon}
+			/>
+			<a href="#"><img src={htmlIcon} alt="html"/></a>		
 		</div>
 	);
 }

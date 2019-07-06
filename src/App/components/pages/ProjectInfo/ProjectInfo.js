@@ -4,6 +4,9 @@ import { TweenMax } from 'gsap';
 //anims
 import { overlayAnim } from '../../../../util/anims/overlayAnim';
 
+//images
+import jsIcon from './assets/js-icon.png';
+
 //components
 import ProjectInfoImage from './ProjectInfoImage/ProjectInfoImage';
 import ProjectInfoDesc from './ProjectInfoDesc/ProjectInfoDesc';
@@ -29,7 +32,12 @@ class ProjectInfo extends Component{
 						<BlueExitButton changePage={() => this.changePage('landing')} />
 					</div>
 					<ProjectInfoImage />
-					<ProjectInfoSkills changePage={() => this.changePage('skillInfo')} />
+					<ProjectInfoSkills skillList={[
+						{
+							href: "https://g.co/kgs/JTD38B",
+							img: jsIcon
+						}
+					]}/>
 					<ProjectInfoDesc />
 				</div>
 			</div>

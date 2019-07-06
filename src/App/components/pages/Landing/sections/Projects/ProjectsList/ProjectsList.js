@@ -1,12 +1,12 @@
 import React from 'react';
 
 //images
-import takeStand from '../assets/take-stand.jpg';
-import stats from '../assets/stats.jpg';
-import tablet from '../assets/tablet.jpg';
-import twoPhones from '../assets/two-phones.jpg';
-import numbers from '../assets/numbers.jpg';
-import phones from '../assets/phones.jpg';
+import ledkyb from '../assets/ledkyb.jpg';
+import iesd from '../assets/iesd.jpg';
+import portfolio from '../assets/portfolio.jpg';
+import ledkybTeamManager from '../assets/ledkyb-team-manager.jpg';
+import smilur from '../assets/smilur.jpg';
+import simon from '../assets/simon.jpg';
 
 //components
 import ProjectItem from './ProjectItem/ProjectItem';
@@ -19,41 +19,47 @@ const ProjectsList = (props) => {
 			<div className="projects-row">
 				<ProjectItem 
 					initProject={initProject[0]}
-					projectImg={takeStand} 
-					projectImgDesc={'take-stand project'}
-					onProjectClick={onProjectClick}
+					projectImg={ledkyb} 
+					onProjectClick={"https://ledkyb.com/"}
+					projectTitle={"Ledkyb Studios, LLC"}
+					projectType={"Web App"}
 					/>
 				<ProjectItem 
 					initProject={initProject[0]}
-					projectImg={stats} 
-					projectImgDesc={'stats project'}
-					onProjectClick={onProjectClick}
+					projectImg={iesd} 
+					onProjectClick={"https://www.ie-sd.com/"}
+					projectTitle={"IESD, Inc"}
+					projectType={"Web App"}
 					/>
 				<ProjectItem 
 					initProject={initProject[0]}
-					projectImg={tablet} 
-					proejctImgDesc={'tablet project'}
-					onProjectClick={onProjectClick}
+					projectImg={portfolio} 
+					onProjectClick={"https://tonynguyen111997.github.io/portfolio/"}
+					projectTitle={"Personal Portfolio"}
+					projectType={"Web App"}
 					/>
 			</div>
 			<div className="projects-row">
 				<ProjectItem 
 					initProject={initProject[1]}
-					projectImg={twoPhones} 
-					projectImgDesc={'twoPhones project'}
-					onProjectClick={onProjectClick}
+					projectImg={ledkybTeamManager} 
+					onProjectClick={""}
+					projectTitle={"Ledkyb Team Manager"}
+					projectType={"Full Stack App"}
 					/>
 				<ProjectItem 
 					initProject={initProject[1]}
-					projectImg={numbers} 
-					projectImgDesc={'numbers project'}
-					onProjectClick={onProjectClick}
+					projectImg={smilur} 
+					onProjectClick={""}
+					projectTitle={"Smilur Mobile App"}
+					projectType={"Mobile App"}
 					/>
 				<ProjectItem 
 					initProject={initProject[1]}
-					projectImg={phones}
-					projectImgDesc={'phones project'}
-					onProjectClick={onProjectClick}
+					projectImg={simon}
+					onProjectClick={"https://codepen.io/Tonynguyen111997/full/wjowzW"}
+					projectTitle={"Retro-Themed Simon Game"}
+					projectType={"Web App"}
 					/>
 			</div>
 		</div>

@@ -27,18 +27,23 @@
 			position: relative;
 			top: -100px;
 			font-size: 1.25rem;
-			margin-bottom: 75px;
+			width: 68%;
+			text-align: center;
 		}
 
-		button{
-			border: none;
-			background: none;
+		.project-type{
+			margin-top: 20px;
+			margin-bottom: 35px;
+			font-size: 1.10rem;
+		}
+
+		a{
 			color: $gray;
 			font-size: 1rem;
 			cursor: pointer;
 			position: relative;
 			bottom: -100px;
-			outline: none;
+			text-decoration: none;
 
 			&:hover{
 				border-bottom: $gray solid 2px;
@@ -53,7 +58,7 @@
 			top: 0px;
 		}
 
-		button{
+		a{
 			bottom: 0px;
 		}
 	}
@@ -69,6 +74,24 @@
 			width: 200px;
 			height: 150px;
 		}
+
+		.project-item-overlay{
+			p{
+				font-size: 1rem;
+			}
+
+			.project-type{
+				font-size: .75rem;
+				margin-top: 10px;
+				margin-bottom: 15px;
+			}
+
+			a{
+				font-size: .75rem;
+			}
+
+		}
+
 	}
 
 	@media only screen and (max-width: $mobile){
@@ -81,6 +104,23 @@
 		.project-item-overlay{
 			width: 300px;
 			height: 225px;
+		}
+
+		.project-item-overlay{
+			p{
+				font-size: 1.25rem;
+			}
+
+			.project-type{
+				font-size: 1.10rem;
+				margin-top: 10px;
+				margin-bottom: 35px;
+			}
+
+			a{
+				font-size: 1rem;
+			}
+
 		}
 	}
 
