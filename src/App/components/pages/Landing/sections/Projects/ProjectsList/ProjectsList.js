@@ -57,7 +57,7 @@ const ProjectsList = (props) => {
 				<ProjectItem 
 					initProject={initProject[1]}
 					projectImg={nacc}
-					onProjectClick={"https://codepen.io/Tonynguyen111997/full/wjowzW"}
+					onProjectClick={"http://nacrane.net/"}
 					projectTitle={"North American Company"}
 					projectType={"Front-end"}
 					/>
