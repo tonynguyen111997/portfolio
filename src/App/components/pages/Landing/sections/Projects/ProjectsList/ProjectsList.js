@@ -6,7 +6,7 @@ import iesd from '../assets/iesd.jpg';
 import portfolio from '../assets/portfolio.jpg';
 import ledkybTeamManager from '../assets/ledkyb-team-manager.jpg';
 import smilur from '../assets/smilur.jpg';
-import simon from '../assets/simon.jpg';
+import nacc from '../assets/nacc.jpg';
 
 //components
 import ProjectItem from './ProjectItem/ProjectItem';
@@ -56,10 +56,10 @@ const ProjectsList = (props) => {
 					/>
 				<ProjectItem 
 					initProject={initProject[1]}
-					projectImg={simon}
+					projectImg={nacc}
 					onProjectClick={"https://codepen.io/Tonynguyen111997/full/wjowzW"}
-					projectTitle={"Retro-Themed Simon Game"}
-					projectType={"Web App"}
+					projectTitle={"North American Company"}
+					projectType={"Front-end"}
 					/>
 			</div>
 		</div>
