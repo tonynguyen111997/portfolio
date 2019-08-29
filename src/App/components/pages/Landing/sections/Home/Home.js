@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //images
-import laptopImage from './assets/laptop-picture.jpg'
+import homeImage from './assets/coding.JPG'
 
 //anims
 import { horizontalToMiddle } from '../../../../../../util/anims/horizontalToMiddle';
@@ -87,7 +87,7 @@ class Home extends Component{
 						/>
 					</div>
 					<div ref={div => this.rightElem = div} id="home-content-right" className="home-content-right">
-						<img id="home-image" src={laptopImage} alt="people studying"/>
+						<img id="home-image" src={homeImage} alt="people studying"/>
 						<div id="home-image-cover"></div>
 					</div>
 				</div>
