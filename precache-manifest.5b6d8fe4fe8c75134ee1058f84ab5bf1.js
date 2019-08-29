@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9911dc73f1108af5c6ef08d6d7780c2c",
+    "revision": "e26c4d4bcbb56ac6849ffb50c22d2186",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "3ecd14cc5d3181925f73",
-    "url": "/portfolio/static/css/main.bf669891.chunk.css"
+    "revision": "dd4cba16ba00b17f605a",
+    "url": "/portfolio/static/css/main.c6429773.chunk.css"
   },
   {
     "revision": "df213698d7c57d9618c3",
     "url": "/portfolio/static/js/2.a474ce7e.chunk.js"
   },
   {
-    "revision": "3ecd14cc5d3181925f73",
-    "url": "/portfolio/static/js/main.c614e971.chunk.js"
+    "revision": "dd4cba16ba00b17f605a",
+    "url": "/portfolio/static/js/main.2dbfdce4.chunk.js"
   },
   {
     "revision": "0fad4c0f10d57b530fe4",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1d3f5c5e8c62e8e4039f025ef6064707",
     "url": "/portfolio/static/media/bootstrap-logo.1d3f5c5e.png"
+  },
+  {
+    "revision": "bbd196ea2dc313e766bde23af256c3a2",
+    "url": "/portfolio/static/media/coding.bbd196ea.JPG"
   },
   {
     "revision": "5b56b244622be30536f1005252c5fd32",
@@ -72,10 +76,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/jest-logo.8dfffb61.png"
   },
   {
-    "revision": "6e2ffc1daa45054b299bbac1e1b2cc0d",
-    "url": "/portfolio/static/media/laptop-picture.6e2ffc1d.jpg"
-  },
-  {
     "revision": "c8ad680ca87cb02c3a16a99e0c6e3492",
     "url": "/portfolio/static/media/laptop.c8ad680c.png"
   },
@@ -86,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6884bc3b5b8e465651696e7e6416f527",
     "url": "/portfolio/static/media/mysql-logo.6884bc3b.png"
+  },
+  {
+    "revision": "eb4620b16afd78c544029e06e97b8340",
+    "url": "/portfolio/static/media/nacc.eb4620b1.jpg"
   },
   {
     "revision": "828b044989c4e993b60e2db1ae10ef64",
@@ -122,10 +126,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bae0584a37510368e6959bef0d9e6ad3",
     "url": "/portfolio/static/media/self-image.bae0584a.jpg"
-  },
-  {
-    "revision": "04a226a62196d12541d00d49a347cd0f",
-    "url": "/portfolio/static/media/simon.04a226a6.jpg"
   },
   {
     "revision": "74746e7591ae1f3a282c02a523649006",
