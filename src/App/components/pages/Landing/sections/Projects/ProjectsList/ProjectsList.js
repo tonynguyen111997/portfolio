@@ -27,7 +27,7 @@ const ProjectsList = (props) => {
 				<ProjectItem 
 					initProject={initProject[0]}
 					projectImg={iesd} 
-					onProjectClick={"https://www.ie-sd.com/"}
+					onProjectClick={"https://www.iesd.com/"}
 					projectTitle={"IESD, Inc"}
 					projectType={"Web App"}
 					/>
