@@ -22,21 +22,21 @@ const ProjectsList = (props) => {
 					projectImg={ledkyb} 
 					onProjectClick={"https://ledkyb.com/"}
 					projectTitle={"Ledkyb Studios, LLC"}
-					projectType={"Web App"}
+					projectType={"Front-end"}
 					/>
 				<ProjectItem 
 					initProject={initProject[0]}
 					projectImg={iesd} 
 					onProjectClick={"https://www.iesd.com/"}
 					projectTitle={"IESD, Inc"}
-					projectType={"Web App"}
+					projectType={"Front-end"}
 					/>
 				<ProjectItem 
 					initProject={initProject[0]}
 					projectImg={portfolio} 
 					onProjectClick={"https://tonynguyen111997.github.io/portfolio/"}
 					projectTitle={"Personal Portfolio"}
-					projectType={"Web App"}
+					projectType={"Front-end"}
 					/>
 			</div>
 			<div className="projects-row">
