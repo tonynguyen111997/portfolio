@@ -45,7 +45,7 @@ const ProjectsList = (props) => {
 					projectImg={ledkybTeamManager} 
 					onProjectClick={""}
 					projectTitle={"Ledkyb Team Manager"}
-					projectType={"Full Stack App"}
+					projectType={"Full Stack"}
 					/>
 				<ProjectItem 
 					initProject={initProject[1]}
