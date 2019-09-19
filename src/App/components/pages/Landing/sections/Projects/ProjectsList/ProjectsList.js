@@ -57,7 +57,7 @@ const ProjectsList = (props) => {
 				<ProjectItem 
 					initProject={initProject[1]}
 					projectImg={nacc}
-					onProjectClick={"http://nacrane.net/"}
+					onProjectClick={"http://www.nacrane.com/"}
 					projectTitle={"North American Company"}
 					projectType={"Front-end"}
 					/>
