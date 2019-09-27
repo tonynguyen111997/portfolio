@@ -32,29 +32,6 @@ const ProjectsList = (props) => {
 					projectType={"Front-end"}
 					/>
 				<ProjectItem 
-					initProject={initProject[0]}
-					projectImg={portfolio} 
-					onProjectClick={"https://tonynguyen111997.github.io/portfolio/"}
-					projectTitle={"Personal Portfolio"}
-					projectType={"Front-end"}
-					/>
-			</div>
-			<div className="projects-row">
-				<ProjectItem 
-					initProject={initProject[1]}
-					projectImg={ledkybTeamManager} 
-					onProjectClick={""}
-					projectTitle={"Ledkyb Team Manager"}
-					projectType={"Full Stack"}
-					/>
-				<ProjectItem 
-					initProject={initProject[1]}
-					projectImg={smilur} 
-					onProjectClick={""}
-					projectTitle={"Smilur Mobile App"}
-					projectType={"Mobile App"}
-					/>
-				<ProjectItem 
 					initProject={initProject[1]}
 					projectImg={nacc}
 					onProjectClick={"http://www.nacrane.com/"}
