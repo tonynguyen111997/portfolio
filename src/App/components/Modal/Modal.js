@@ -6,8 +6,26 @@ class Modal extends Component{
   }
 
   render(){
+    const { imgSrc, imgAlt, projectTitle, projectDesc, projectSkills } = this.props;
+
+    const skills = projectSkills.map(skill => {
+      return (
+        <a href={skill.href} target="_blank">
+          <img src={skill.imgSrc} alt={skill.imgAlt} />
+        </a>
+      )
+    })
+
     return (
-      <h1>Test</h1>
+      <div className="modal-overlay">
+        <div className="modal">
+          {/* <img src={imgSrc} alt={imgAlt} /> */}
+          <div className="project-image" style={{backgroundImage: `url(${imgSrc})`}}></div>
+          <div className="skills-container">
+            {skills}
+          </div>
+        </div>
+      </div>
     )
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 
 //sections
+import Modal from '../../Modal/Modal';
 import Home from './sections/Home/Home';
 import About from './sections/About/About';
 import Skills from './sections/Skills/Skills';
@@ -11,10 +12,18 @@ import Contact from './sections/Contact/Contact';
 import Navbar from '../../Navbar/Navbar';
 import ReturnButton from '../../ReturnButton/ReturnButton';
 
+//Testing
+import  iesdPic from './sections/Projects/assets/iesd.jpg';
+
 const Landing = (props) => {
   const { changePage } = props;
 	return (
 		<div className="landing">
+      <Modal 
+        imgSrc={iesdPic}
+        imgAlt={"Test"}
+        projectSkills={[]}
+      />
       <Navbar />
       <ReturnButton />
       <Home />

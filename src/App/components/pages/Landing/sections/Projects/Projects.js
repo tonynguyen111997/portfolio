@@ -73,7 +73,6 @@ class Projects extends Component{
 				<div className="projects-top"></div> {/* projects-top & projects-bottom is for layout*/}
 				<div className="projects-body">
 					<ProjectHeader initHeader={(elem) => this.initElem(this.header, elem)} />
-					<Modal />
 					<ProjectsList 
 						initProject={[
 							((elem) => this.initElem(this.projectRowOne, elem)),
