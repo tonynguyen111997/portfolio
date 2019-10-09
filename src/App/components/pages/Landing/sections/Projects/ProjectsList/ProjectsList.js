@@ -3,9 +3,6 @@ import React from 'react';
 //images
 import ledkyb from '../assets/ledkyb.jpg';
 import iesd from '../assets/iesd.jpg';
-import portfolio from '../assets/portfolio.jpg';
-import ledkybTeamManager from '../assets/ledkyb-team-manager.jpg';
-import smilur from '../assets/smilur.jpg';
 import nacc from '../assets/nacc.jpg';
 
 //components
@@ -32,7 +29,7 @@ const ProjectsList = (props) => {
 					projectType={"Front-end"}
 					/>
 				<ProjectItem 
-					initProject={initProject[1]}
+					initProject={initProject[0]}
 					projectImg={nacc}
 					onProjectClick={"http://www.nacrane.com/"}
 					projectTitle={"North American Company"}
