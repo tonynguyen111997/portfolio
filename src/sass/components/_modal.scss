@@ -17,15 +17,18 @@
     max-width: 400px;
     background: white;
     border: red solid 2px;
+    position: relative;
 
     .project-image{
-      height: 100px;
-      width: 100px;
-      border: red solid 1px;
+      width: 100%;
+      height: 50%;
+      background-size: cover;
+      background-position: top center;
     }
 
     .skills-container{
-      height: 75px;
+      height: 15%;
+      max-height: 75px;
       width: 100%;
       background: $dark-navy;
     }
