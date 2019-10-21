@@ -12,7 +12,6 @@ import { isElementInViewport } from '../../../../../../util/util';
 import ProjectsList from './ProjectsList/ProjectsList';
 import ProjectHeader from './ProjectHeader/ProjectHeader';
 import ProjectTracker from './ProjectTracker/ProjectTracker';
-import Modal from '../../../../Modal/Modal';
 
 class Projects extends Component{
 	constructor(props){
@@ -57,15 +56,15 @@ class Projects extends Component{
 		window.removeEventListener('scroll', this.scrollFunc);
 	}
 
-	handleProjectClick = () => {
-		const { changePage } = this.props;
+	// handleProjectClick = () => {
+	// 	const { changePage } = this.props;
 
-		const overlay = new overlayAnim();
-		TweenMax.killAll();
-		return overlay.initHorizontalAnim(() => {
-			changePage('projectInfo');
-		}).play();
-	}
+	// 	const overlay = new overlayAnim();
+	// 	TweenMax.killAll();
+	// 	return overlay.initHorizontalAnim(() => {
+	// 		changePage('projectInfo');
+	// 	}).play();
+	// }
 
 	render(){
 		return (
@@ -78,7 +77,7 @@ class Projects extends Component{
 							((elem) => this.initElem(this.projectRowOne, elem)),
 							((elem) => this.initElem(this.projectRowTwo, elem))
 						]}
-						onProjectClick={this.handleProjectClick}
+						onProjectClick={this.props.handleProjectClick}
 					/>
 				</div>
 				<div className="projects-bottom">

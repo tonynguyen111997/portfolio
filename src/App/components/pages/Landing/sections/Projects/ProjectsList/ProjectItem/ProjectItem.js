@@ -10,9 +10,9 @@ const ProjectItem = (props) => {
 			<div className="project-item-overlay">
 				<p>{projectTitle}</p>
 				<p className="project-type">{projectType}</p>
-				<a href={onProjectClick} target="_blank">
-					{learnMore}
-				</a>
+				<button onClick={onProjectClick}>
+					Learn More
+				</button>
 			</div>
 		</div>
 	);

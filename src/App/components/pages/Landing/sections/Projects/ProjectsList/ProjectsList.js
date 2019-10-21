@@ -4,6 +4,7 @@ import React from 'react';
 import ledkyb from '../assets/ledkyb.jpg';
 import iesd from '../assets/iesd.jpg';
 import nacc from '../assets/nacc.jpg';
+import jsIcon from '../../Skills/assets/js-logo.png'
 
 //components
 import ProjectItem from './ProjectItem/ProjectItem';
@@ -17,7 +18,17 @@ const ProjectsList = (props) => {
 				<ProjectItem 
 					initProject={initProject[0]}
 					projectImg={ledkyb} 
-					onProjectClick={"https://ledkyb.com/"}
+					onProjectClick={() => onProjectClick(
+						iesd,
+						[{
+							imgSrc: jsIcon,
+							imgAlt: 'JavaScript',
+							href: 'https://google.com',
+						}],
+						"Testing",
+						"Ledkyb",
+						"Desc here"
+					)}
 					projectTitle={"Ledkyb Studios, LLC"}
 					projectType={"Front-end"}
 					/>
