@@ -19,15 +19,16 @@ const ProjectsList = (props) => {
 					initProject={initProject[0]}
 					projectImg={ledkyb} 
 					onProjectClick={() => onProjectClick(
-						iesd,
-						[{
-							imgSrc: jsIcon,
-							imgAlt: 'JavaScript',
-							href: 'https://google.com',
+						iesd, // Project Image
+						[{ 
+							imgSrc: jsIcon, // Skill img src
+							imgAlt: 'JavaScript', 
+							href: 'https://google.com', 
 						}],
-						"Testing",
-						"Ledkyb",
-						"Desc here"
+						"Testing", // Project Title
+						"Ledkyb", // Company
+						"Desc here", // Description
+						"https://google.com"
 					)}
 					projectTitle={"Ledkyb Studios, LLC"}
 					projectType={"Front-end"}

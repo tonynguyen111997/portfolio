@@ -26,26 +26,28 @@ class Landing extends Component{
         projectSkills: [],
         projectTitle: "",
         projectCompany: "",
-        projectDesc: ""
+        projectDesc: "",
+        projectLink: ""
       }
     }
   }
 
-  handleProjectClick = (imgSrc, projectSkills, projectTitle, projectCompany, projectDesc) => {
+  handleProjectClick = (imgSrc, projectSkills, projectTitle, projectCompany, projectDesc, projectLink) => {
     this.setState({
       projectModal: {
         imgSrc,
         projectSkills,
         projectTitle,
         projectCompany,
-        projectDesc
+        projectDesc,
+        projectLink
       }
     });
   }
 
   render(){
   const { changePage } = this.props;
-  const { imgSrc, projectSkills, projectTitle, projectCompany, projectDesc } = this.state.projectModal;
+  const { imgSrc, projectSkills, projectTitle, projectCompany, projectDesc, projectLink } = this.state.projectModal;
 
   const modal = (projectTitle === "") ? null : (
     <ProjectModal 
@@ -54,6 +56,7 @@ class Landing extends Component{
       projectTitle={projectTitle}
       projectCompany={projectCompany}
       projectDesc={projectDesc}
+      projectLink={projectLink}
     />);
 
     return (

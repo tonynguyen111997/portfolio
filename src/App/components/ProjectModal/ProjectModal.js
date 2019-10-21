@@ -6,7 +6,7 @@ class ProjectModal extends Component{
   }
 
   render(){
-    const { imgSrc, projectTitle, projectCompany, projectDesc, projectSkills } = this.props;
+    const { imgSrc, projectTitle, projectCompany, projectDesc, projectSkills, projectLink } = this.props;
 
     const skills = projectSkills.map(skill => {
       return (
@@ -16,6 +16,8 @@ class ProjectModal extends Component{
       )
     })
 
+    console.log(projectLink);
+
     return (
       <div className="modal-overlay">
         <div className="modal">
@@ -24,7 +26,7 @@ class ProjectModal extends Component{
             {skills}
           </div>
           <div className="modal-project-info">
-            <p className="modal-project-title"><strong>{projectTitle}</strong></p>
+            <a href={projectLink} className="modal-project-title" target="_blank"><strong>{projectTitle}</strong></a>
             <p className="modal-project-company">{projectCompany}</p>
             <p className="modal-project-desc">{projectDesc}</p>
           </div>
